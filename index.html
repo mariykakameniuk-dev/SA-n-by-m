@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Набори Sisters Aroma</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+background:linear-gradient(135deg,#fde7ef,#edf8ef);
+padding:30px;
+color:#333;
+}
+.container{max-width:1300px;margin:auto}
+h1{
+text-align:center;
+font-size:42px;
+margin-bottom:10px;
+color:#5d4a52;
+}
+.sub{
+text-align:center;
+margin-bottom:25px;
+color:#6b7280;
+}
+.search{
+width:100%;
+padding:15px;
+border:none;
+border-radius:14px;
+margin-bottom:20px;
+font-size:16px;
+}
+
+/* новий блок керування */
+.top-controls{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+select{
+padding:12px 16px;
+border:none;
+border-radius:14px;
+font-size:15px;
+cursor:pointer;
+background:white;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+margin-bottom:30px;
+}
+button{
+padding:12px 18px;
+border:none;
+border-radius:999px;
+background:linear-gradient(135deg,#f6b7c8,#b9e4c9);
+color:#355244;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:22px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+.card:hover{transform:translateY(-5px)}
+
+.icon{
+height:170px;
+border-radius:16px;
+background:linear-gradient(135deg,#fff1f5,#eefbf0);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:52px;
+margin-bottom:15px;
+}
+.title{
+font-size:19px;
+font-weight:bold;
+margin-bottom:8px;
+color:#4c3e45;
+}
+.desc{
+font-size:14px;
+color:#666;
+line-height:1.5;
+margin-bottom:10px;
+}
+.discount{
+font-size:18px;
+font-weight:bold;
+color:#1f7a4f;
+margin-bottom:10px;
+}
+.badge{
+display:inline-block;
+padding:6px 12px;
+background:#fce7f3;
+border-radius:999px;
+font-size:13px;
+}
+
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+.grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Набори Sisters Aroma</h1>
+<div class="sub">Всі готові набори зі знижками</div>
+
+<input class="search" type="text" id="search" placeholder="Пошук набору...">
+
+<div class="top-controls">
+<select id="columnsSelect">
+<option value="2">2 набори в ряд</option>
+<option value="3">3 набори в ряд</option>
+<option value="4" selected>4 набори в ряд</option>
+<option value="5">5 наборів в ряд</option>
+<option value="6">6 наборів в ряд</option>
+</select>
+</div>
+
+<div class="buttons">
+<button onclick="filterTag('all')">Усі</button>
+<button onclick="filterTag('крем')">Крем</button>
+<button onclick="filterTag('парфум')">Парфум</button>
+<button onclick="filterTag('лосьйон')">Лосьйон</button>
+<button onclick="filterTag('гель')">Гель</button>
+<button onclick="filterTag('диф')">Дифузор</button>
+<button onclick="filterTag('мило')">Мило</button>
+</div>
+
+<div class="grid" id="products"></div>
+
+</div>
+
+<script>
+  
+  const items = [
+
+/* КРЕМ */
+
+{name:"Крем + Максимайзер",tags:"крем",desc:"Склад: крем + максимайзер",discount:"100 грн",icon:"🧴💋"},
+{name:"3 Крема",tags:"крем",desc:"Склад: 3 крема",discount:"150 грн",icon:"🧴🧴🧴"},
+{name:"Парфум10 + Крем",tags:"крем парфум",desc:"Склад: парфум 10 мл + крем",discount:"100 грн",icon:"🌸🧴"},
+{name:"Гідрейтер + Крем",tags:"крем",desc:"Склад: гідрейтер + крем",discount:"100 грн",icon:"💧🧴"},
+{name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:"Склад: лосьйон + крем",discount:"100 грн",icon:"🧴💚"},
+{name:"Тверде мило + Крем",tags:"мило крем",desc:"Склад: мило + крем",discount:"100 грн",icon:"🧼🧴"},
+{name:"Міст + Крем",tags:"крем",desc:"Склад: міст + крем",discount:"100 грн",icon:"✨🧴"},
+
+/* ПАРФУМИ */
+
+{name:"Максимайзер + Гідрейтер",tags:"догляд",desc:"Склад: максимайзер + гідрейтер",discount:"150 грн",icon:"💋💧"},
+{name:"Парфум10 + Максимайзер",tags:"парфум",desc:"Склад: парфум + максимайзер",discount:"150 грн",icon:"🌸💋"},
+{name:"Парфум10 + Парфум50",tags:"парфум",desc:"Склад: парфум 10 мл + парфум 50 мл",discount:"250 грн",icon:"🌸💫"},
+{name:"Міст + Парфум10",tags:"парфум",desc:"Склад: міст + парфум",discount:"150 грн",icon:"✨🌸"},
+{name:"Міксологія",tags:"парфум",desc:"Склад: парфумний набір",discount:"440 грн",icon:"🌺✨"},
+
+/* ДІМ */
+
+{name:"2 Дифузора",tags:"диф",desc:"Склад: 2 дифузора",discount:"300 грн",icon:"🏠🏠"},
+{name:"Рефіл + Дифузор",tags:"диф",desc:"Склад: рефіл + дифузор",discount:"200 грн",icon:"♻️🏠"},
+{name:"Свічка + Дифузор",tags:"диф",desc:"Склад: свічка + дифузор",discount:"250 грн",icon:"🕯️🏠"},
+{name:"Аромат в авто + Дифузор",tags:"диф",desc:"Склад: авто аромат + дифузор",discount:"250 грн",icon:"🚗🏠"},
+{name:"Мило500 + Дифузор",tags:"мило диф",desc:"Склад: мило + дифузор",discount:"200 грн",icon:"🧼🏠"},
+{name:"8 Дифузорів",tags:"диф",desc:"Склад: 8 дифузорів",discount:"1898 грн",icon:"🏠✨"},
+{name:"Рефіл + 2 Дифузора",tags:"диф",desc:"Склад: рефіл + 2 дифузора",discount:"345 грн",icon:"♻️🏠🏠"},
+
+/* ТІЛО */
+
+{name:"Лосьйон250 + Гель250 + Крем",tags:"лосьйон гель крем",desc:"Склад: лосьйон + гель + крем",discount:"200 грн",icon:"💚🧴"},
+{name:"Гель100 + Лосьйон100",tags:"лосьйон гель",desc:"Склад: гель + лосьйон",discount:"150 грн",icon:"💚💧"},
+{name:"Лосьйон250 + Гель250",tags:"лосьйон гель",desc:"Склад: лосьйон + гель",discount:"150 грн",icon:"💚✨"},
+{name:"Інтим250 + Гель250",tags:"гель",desc:"Склад: інтим + гель",discount:"250 грн",icon:"💗💧"},
+{name:"Део + Гель250",tags:"гель",desc:"Склад: део + гель",discount:"150 грн",icon:"🌿💧"},
+{name:"3 Крема + 3 Лосьйони + 3 Гелі",tags:"крем лосьйон гель",desc:"Великий набір догляду",discount:"1250 грн",icon:"💖🧴"},
+{name:"Тверде мило + Лосьйон250",tags:"мило лосьйон",desc:"Склад: мило + лосьйон",discount:"150 грн",icon:"🧼💚"}
+
+];
+
+
+const products=document.getElementById("products");
+const search=document.getElementById("search");
+const columnsSelect=document.getElementById("columnsSelect");
+
+function show(data){
+products.innerHTML="";
+data.forEach(item=>{
+products.innerHTML+=`
+<div class="card">
+<div class="icon">${item.icon}</div>
+<div class="title">${item.name}</div>
+<div class="desc">${item.desc}</div>
+<div class="discount">Сума знижки: ${item.discount}</div>
+
+</div>
+`;
+});
+}
+
+function filterTag(tag){
+if(tag=="all"){show(items);return;}
+show(items.filter(item=>item.tags.includes(tag)));
+}
+
+search.addEventListener("input",()=>{
+let val=search.value.toLowerCase();
+show(items.filter(item =>
+item.name.toLowerCase().includes(val) ||
+item.tags.toLowerCase().includes(val) ||
+item.desc.toLowerCase().includes(val)
+));
+});
+
+/* головне нове */
+columnsSelect.addEventListener("change",()=>{
+products.style.gridTemplateColumns=`repeat(${columnsSelect.value},1fr)`;
+});
+
+show(items);
+
+</script>
+</body>
+</html>
