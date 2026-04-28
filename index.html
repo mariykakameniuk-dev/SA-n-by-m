@@ -219,7 +219,10 @@ products.innerHTML="";
 data.forEach(item=>{
 products.innerHTML+=`
 <div class="card">
-<div class="icon">${item.icon}</div>
+<img src="images/${item.img}" class="photo"
+onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+
+<div class="icon" style="display:none">${item.icon}</div>
 <div class="title">${item.name}</div>
 <div class="desc">${item.desc}</div>
 <div class="discount">Сума знижки: ${item.discount}</div>
