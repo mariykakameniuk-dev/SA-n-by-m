@@ -23,3 +23,10 @@ display:block;
 .title, .desc, .discount{
 padding:0 15px;
 }
+
+img{
+width:200px !important;
+height:200px !important;
+border:5px solid red !important;
+object-fit:cover !important;
+}
