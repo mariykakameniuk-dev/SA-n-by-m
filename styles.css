@@ -22,3 +22,18 @@ flex-shrink:0;
 object-fit:cover;
 display:block;
 }
+
+
+img.photo{
+width:100% !important;
+height:160px !important;
+max-height:160px !important;
+min-height:160px !important;
+object-fit:cover !important;
+display:block !important;
+overflow:hidden !important;
+}
+
+.card{
+overflow:hidden !important;
+}
