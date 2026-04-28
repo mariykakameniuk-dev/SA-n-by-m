@@ -3,11 +3,10 @@ background:white;
 padding:15px;
 border-radius:22px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-
 display:flex;
 flex-direction:column;
 gap:10px;
+overflow:hidden;
 }
 
 .photo{
@@ -20,4 +19,11 @@ display:block;
 
 .icon{
 display:none !important;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4, minmax(0, 1fr));
+gap:20px;
+align-items:start;
 }
