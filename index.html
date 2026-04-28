@@ -217,12 +217,10 @@ function show(data){
 products.innerHTML="";
 
 data.forEach(item=>{
-
-console.log(item.img); // 👈 ОЦЕ СЮДИ (всередину forEach)
-
 products.innerHTML+=`
 <div class="card">
 <img src="${item.img}" class="photo">
+
 <div class="title">${item.name}</div>
 <div class="desc">${item.desc}</div>
 <div class="discount">Сума знижки: ${item.discount}</div>
@@ -230,7 +228,7 @@ products.innerHTML+=`
 `;
 });
 }
-
+  
 function filterTag(tag){
 if(tag=="all"){show(items);return;}
 show(items.filter(item=>item.tags.includes(tag)));
