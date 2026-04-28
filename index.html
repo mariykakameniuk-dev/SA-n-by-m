@@ -218,7 +218,7 @@ products.innerHTML="";
 data.forEach(item=>{
 products.innerHTML+=`
 <div class="card">
-<img src="images/${item.img}" class="photo"
+<img src="${item.img}" class="photo"
 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
 
 <div class="icon" style="display:none">${item.icon}</div>
