@@ -215,16 +215,17 @@ const columnsSelect=document.getElementById("columnsSelect");
 
 function show(data){
 products.innerHTML="";
+
 data.forEach(item=>{
+
+console.log(item.img); // 👈 ОЦЕ СЮДИ (всередину forEach)
+
 products.innerHTML+=`
 <div class="card">
-<img src="images/${item.img}" class="photo">
-
-<div class="icon" style="display:none">${item.icon}</div>
+<img src="${item.img}" class="photo">
 <div class="title">${item.name}</div>
 <div class="desc">${item.desc}</div>
 <div class="discount">Сума знижки: ${item.discount}</div>
-
 </div>
 `;
 });
