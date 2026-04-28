@@ -1,7 +1,16 @@
-
-img{
-width:200px !important;
-height:200px !important;
-border:5px solid red !important;
+.photo{
+width:100% !important;
+height:140px !important;
+max-height:140px !important;
 object-fit:cover !important;
+display:block !important;
+border-radius:16px;
+}
+
+.card{
+overflow:hidden !important;
+}
+
+.grid{
+align-items:start !important;
 }
