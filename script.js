@@ -13,14 +13,11 @@ const items = [
     "images/krem.jpg",
     "images/losyon250.jpg"
   ]},
-{name:"Тверде мило + Крем",tags:"мило крем",desc:"Склад: мило + крем",discount:"100 грн",icon:"🧼🧴",img:"images/soap-krem.jpg"},
-{name:"Міст + Крем",tags:"крем",desc:"Склад: міст + крем",discount:"100 грн",icon:"✨🧴",img:"images/mist-krem.jpg"},
+{name:"Тверде мило + Крем",tags:"мило крем",desc:"Склад: мило + крем",discount:"128 грн",icon:"🧼🧴",img:"images/soap-krem.jpg"},
+{name:"Міст + Крем",tags:"крем",desc:"Склад: міст + крем",discount:"198 грн",icon:"✨🧴",img:"images/mist-krem.jpg"},
 
 /* ПАРФУМИ */
-{name:"Максимайзер + Гідрейтер",tags:"догляд",desc:"Склад: максимайзер + гідрейтер",discount:"150 грн",icon:"💋💧",images:[
-    "images/maximazer.jpg",
-    "images/hydrater.jpg"
-  ]},
+
 {name:"Парфум10 + Максимайзер",tags:"парфум",desc:"Склад: парфум + максимайзер",discount:"150 грн",icon:"🌸💋",images:[
     "images/maximazer.jpg",
     "images/parfum10.jpg"
@@ -29,8 +26,8 @@ const items = [
     "images/parfum10.jpg",
     "images/parfum50.jpg"
   ]},
-{name:"Міст + Парфум10",tags:"парфум",desc:"Склад: міст + парфум",discount:"150 грн",icon:"✨🌸",img:"images/mist-parfum.jpg"},
-{name:"Міксологія",tags:"парфум",desc:"Склад: парфумний набір",discount:"440 грн",icon:"🌺✨",img:"images/mixology.jpg"},
+{name:"Міст + Парфум10",tags:"парфум",desc:"Склад: міст + парфум",discount:"198 грн",icon:"✨🌸",img:"images/mist-parfum.jpg"},
+{name:"Міксологія",tags:"парфум",desc:"Склад: парфумний набір",discount:"698 грн",icon:"🌺✨",img:"images/mixology.jpg"},
 
 /* ДІМ */
 {name:"2 Дифузора",tags:"диф",desc:"Склад: 2 дифузора",discount:"200 грн",icon:"🏠🏠",img:"images/2-dif.jpg"},
