@@ -44,13 +44,28 @@ function show(data){
   products.innerHTML="";
 
   data.forEach(item=>{
+
+    let imageBlock = "";
+
+    if(item.img){
+      imageBlock = `<img src="${item.img}" class="photo">`;
+    } else if(item.images){
+      imageBlock = `
+        <div class="images">
+          ${item.images.map(img => `<img src="${img}">`).join("")}
+        </div>
+      `;
+    } else {
+
+      imageBlock = `<div class="no-image">Нема фото</div>`;
+    }
+
     products.innerHTML += `
       <div class="card">
-        <div class="icon">${item.icon}</div>
-        <img src="${item.img}" class="photo">
+        ${imageBlock}
         <div class="title">${item.name}</div>
         <div class="desc">${item.desc}</div>
-        <div class="discount">${item.discount}</div>
+        <div class="discount">Сума знижки: ${item.discount}</div>
       </div>
     `;
   });
