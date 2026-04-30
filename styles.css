@@ -127,15 +127,15 @@ button:hover{
   display:flex;
   gap:6px;
   padding:10px;
+  height:180px; /* така ж як у .photo */
 }
 
 .images img{
-  height:80px;
   object-fit:cover;
   border-radius:10px;
   flex:1;
+  height:100%;
 }
-
 
 .images img:nth-child(1):nth-last-child(2),
 .images img:nth-child(2):nth-last-child(1){
