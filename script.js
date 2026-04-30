@@ -6,10 +6,10 @@ const items = [
 
 /* КРЕМ */
 {name:"Крем + Максимайзер",tags:"крем",desc:"Склад: крем + максимайзер",discount:"100 грн",icon:"🧴💋",img:"images/krem-max.jpg"},
-{name:"3 Крема",tags:"крем",desc:"Склад: 3 крема",discount:"150 грн",icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
+{name:"3 Крема",tags:"крем",desc:"Склад: 3 крема",discount:"100 грн",icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
 {name:"Парфум10 + Крем",tags:"крем парфум",desc:"Склад: парфум 10 мл + крем",discount:"150 грн",icon:"🌸🧴",img:"images/parfum-krem.jpg"},
 {name:"Гідрейтер + Крем",tags:"крем гідрейтер догляд",desc:"Склад: гідрейтер + крем",discount:"100 грн",icon:"💧🧴",img:"images/hydrater-krem.jpg"},
-{name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:"Склад: лосьйон + крем",discount:"100 грн",icon:"🧴💚",images:[
+{name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:"Склад: лосьйон + крем",discount:"150 грн",icon:"🧴💚",images:[
     "images/krem.jpg",
     "images/losyon250.jpg"
   ]},
