@@ -122,3 +122,28 @@ button:hover{
     grid-template-columns:1fr;
   }
 }
+
+.images{
+  display:flex;
+  gap:6px;
+  padding:10px;
+}
+
+.images img{
+  height:80px;
+  object-fit:cover;
+  border-radius:10px;
+  flex:1;
+}
+
+
+.images img:nth-child(1):nth-last-child(2),
+.images img:nth-child(2):nth-last-child(1){
+  flex: 0 0 50%;
+}
+
+.images img:nth-child(1):nth-last-child(3),
+.images img:nth-child(2):nth-last-child(2),
+.images img:nth-child(3):nth-last-child(1){
+  flex: 0 0 33.33%;
+}
