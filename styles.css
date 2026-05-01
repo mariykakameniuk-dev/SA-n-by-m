@@ -127,23 +127,14 @@ button:hover{
   display:flex;
   gap:6px;
   padding:10px;
-  height:180px; /* така ж як у .photo */
+  height:180px;
+  overflow:hidden;
 }
 
 .images img{
+  flex:1 1 0;
+  min-width:0;
+  height:100%;
   object-fit:cover;
   border-radius:10px;
-  flex:1;
-  height:100%;
-}
-
-.images img:nth-child(1):nth-last-child(2),
-.images img:nth-child(2):nth-last-child(1){
-  flex: 0 0 50%;
-}
-
-.images img:nth-child(1):nth-last-child(3),
-.images img:nth-child(2):nth-last-child(2),
-.images img:nth-child(3):nth-last-child(1){
-  flex: 0 0 33.33%;
 }
