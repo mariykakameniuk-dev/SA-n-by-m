@@ -42,9 +42,19 @@ const items = [
 {name:"Подарунковий набір ДЛЯ СУМОЧКИ",tags:"spring крем парфум",holiday:"spring",desc:"крем, бальзам, міні парфум",oldPrice: 1816,price: 1449,icon:"👛💄",img:"images/for-bag.jpg"},
 {name:"Подарунковий набір ДЛЯ ПОДРУЖОК",tags:"spring крем догляд",holiday:"spring",desc:"2 бальзами + креми",oldPrice: 1516,price: 1199,icon:"💕✨",img:"images/for-girls.jpg"},
 {name:"Подарунковий набір СОЛОДКИЙ",tags:"spring дім свічка диф",holiday:"spring",mothersDay:true,desc:"свічка, дифузор, крем, мило",oldPrice: 2856,price: 2199,icon:"🍯🕯",img:"images/sweet-set.jpg"},
-{name:"Подарунковий набір УЛЮБЛЕНІ КРЕМИ",tags:"spring крем догляд",holiday:"spring",mothersDay:true,desc:"4 креми",oldPrice: 1795,price: 1799,icon:"🧴💕",img:"images/favorite-creams.jpg"},
+{name:"Подарунковий набір УЛЮБЛЕНІ КРЕМИ",tags:"spring крем догляд",holiday:"spring",mothersDay:true,desc:"4 креми",oldPrice: 1795,price: 1399,icon:"🧴💕",img:"images/favorite-creams.jpg"},
 {name:"Подарунковий набір ВИШНЯ",tags:"spring крем гель лосьйон",holiday:"spring",mothersDay:true,desc:"гель, лосьйон, крем, свічка",oldPrice: 3495,price: 2799,icon:"🍒✨",img:"images/cherry-set.jpg"},
-{name:"SUGAR PORN", tags:"spring парфум крем", holiday:"spring", mothersDay:false, desc:"парфум, крем, мило", oldPrice: 2456, price: 1999:, icon:"🍭💋", img:"images/sugar-porn.jpg" },
+{
+  name:"SUGAR PORN",
+  tags:"spring парфум крем",
+  holiday:"spring",
+  mothersDay:false,
+  desc:"парфум, крем, мило",
+  oldPrice:2456,
+  price:1999,
+  icon:"🍭💋",
+  img:"images/sugar-porn.jpg"
+},
 {name:"SUGAR PORN ДОГЛЯДОВИЙ", tags:"spring парфум крем догляд", holiday:"spring", mothersDay:true, desc:"гель, крем, мило", oldPrice: 2796, price: 2199, icon:"🍭💋", img:"images/sugar-porn-care.jpg" },
 {name:"Набір ТУРБОТА ПРО НЕЇ", tags:"spring крем догляд парфум", holiday:"spring", mothersDay:true, desc:"крем, гель, мило", oldPrice: 2406, price: 1899, icon:"💕🧴", img:"images/care-for-her.jpg"},
 
