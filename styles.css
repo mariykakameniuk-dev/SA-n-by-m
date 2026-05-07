@@ -16,48 +16,38 @@ body{
   margin:auto;
 }
 
+/* HEADER */
 h1{
   text-align:center;
   font-size:42px;
   margin-bottom:10px;
-  color:#000;
+  color:#111;
 }
 
 .sub{
   text-align:center;
   margin-bottom:25px;
-  color:#111;
+  color:#222;
 }
 
+/* INPUT */
 .search{
   width:100%;
   padding:15px;
   border:none;
   border-radius:14px;
   margin-bottom:20px;
-  background:#fff;
-  color:#000;
-  outline:none;
+  color:#111;
+  font-weight:500;
 }
 
-.search::placeholder{
-  color:#555;
+/* SELECT */
+select{
+  color:#111;
+  font-weight:600;
 }
 
-.top-controls{
-  display:flex;
-  justify-content:center;
-  margin-bottom:20px;
-}
-
-#columnsSelect{
-  padding:12px 16px;
-  border:none;
-  border-radius:14px;
-  background:#fff;
-  color:#000;
-}
-
+/* BUTTONS (як ти хотів залишити стиль) */
 .buttons{
   display:flex;
   flex-wrap:wrap;
@@ -73,39 +63,114 @@ button{
   background:linear-gradient(135deg,#f6b7c8,#b9e4c9);
   cursor:pointer;
   transition:.3s;
-  color:#000;
-  font-weight:600;
+  color:#111;
+  font-weight:700;
 }
 
 button:hover{
   transform:translateY(-2px);
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:20px;
 }
 
+/* CARD */
 .card{
-  background:#fff;
+  background:white;
   border-radius:22px;
-  border:1px solid #ddd;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
   overflow:hidden;
   transition:.3s;
+
+  border:1px solid #e8dfe8; /* ніжна рамка */
 }
 
 .card:hover{
   transform:translateY(-5px);
 }
 
+/* IMAGE */
 .photo{
   width:100%;
   height:180px;
   object-fit:cover;
 }
 
+/* TEXT */
+.title{
+  font-size:18px;
+  font-weight:800;
+  padding:10px;
+  color:#111;
+}
+
+.desc{
+  padding:0 10px;
+  font-size:14px;
+  color:#222;
+  line-height:1.4;
+}
+
+/* PRICES */
+.price-box{
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+/* СТАРА ЦІНА */
+.old{
+  text-decoration:line-through;
+  color:#777;
+  font-weight:600;
+}
+
+/* НОВА ЦІНА */
+.new{
+  font-weight:900;
+  color:#000;
+  font-size:18px;
+}
+
+/* ЗНИЖКА */
+.save{
+  color:#0a7a3d;
+  font-weight:800;
+}
+
+/* BADGES */
+.badge{
+  display:inline-block;
+  margin:6px 10px;
+  padding:5px 12px;
+  font-size:12px;
+  border-radius:999px; /* овальний */
+  font-weight:700;
+  background:#f1f1f1;
+  color:#222;
+  border:1px solid #ddd;
+}
+
+/* ДЕНЬ МАТЕРІ — ніжно рожевий */
+.badge.pink{
+  background:#ffd6e7;
+  color:#7a2a4d;
+  border:1px solid #f3a6c6;
+}
+
+/* ВЕСНЯНИЙ (більш нейтральний, НЕ кислотний) */
+.badge.spring{
+  background:#e8f5ea;
+  color:#1f4d2b;
+  border:1px solid #bfe3c6;
+}
+
+/* IMAGES */
 .images{
   display:flex;
   gap:6px;
@@ -122,61 +187,7 @@ button:hover{
   border-radius:10px;
 }
 
-.title{
-  font-size:18px;
-  font-weight:700;
-  padding:12px;
-  color:#000;
-}
-
-.desc{
-  padding:0 12px;
-  font-size:14px;
-  color:#000;
-  line-height:1.5;
-}
-
-.price-box{
-  padding:12px;
-  display:flex;
-  flex-direction:column;
-  gap:5px;
-  border-top:1px solid #eee;
-  margin-top:10px;
-}
-
-/* стара ціна — трохи сіріша */
-.old{
-  text-decoration:line-through;
-  color:#444;
-  font-weight:500;
-}
-
-/* нова ціна — акцент */
-.new{
-  font-weight:800;
-  color:#d1005a;
-  font-size:18px;
-}
-
-/* знижка — зелена акцентна */
-.save{
-  color:#0a8f4a;
-  font-weight:700;
-}
-
-.badge.pink{
-  background:#ffe3ee;
-  color:#6b2a45;
-  border:1px solid #f2b6cd;
-}
-
-.icon{
-  font-size:40px;
-  text-align:center;
-  padding-top:10px;
-}
-
+/* RESPONSIVE */
 @media(max-width:900px){
   .grid{
     grid-template-columns:repeat(2,1fr);
@@ -186,13 +197,5 @@ button:hover{
 @media(max-width:600px){
   .grid{
     grid-template-columns:1fr;
-  }
-
-  body{
-    padding:15px;
-  }
-
-  h1{
-    font-size:32px;
   }
 }
