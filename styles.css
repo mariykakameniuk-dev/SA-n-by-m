@@ -20,13 +20,13 @@ h1{
   text-align:center;
   font-size:42px;
   margin-bottom:10px;
-  color:#000;
+  color:#111;
 }
 
 .sub{
   text-align:center;
   margin-bottom:25px;
-  color:#111;
+  color:#222;
 }
 
 .search{
@@ -35,27 +35,13 @@ h1{
   border:none;
   border-radius:14px;
   margin-bottom:20px;
-  background:#fff;
-  color:#000;
-  outline:none;
+  color:#111;
+  font-weight:500;
 }
 
-.search::placeholder{
-  color:#555;
-}
-
-.top-controls{
-  display:flex;
-  justify-content:center;
-  margin-bottom:20px;
-}
-
-#columnsSelect{
-  padding:12px 16px;
-  border:none;
-  border-radius:14px;
-  background:#fff;
-  color:#000;
+select{
+  color:#111;
+  font-weight:600;
 }
 
 .buttons{
@@ -73,8 +59,8 @@ button{
   background:linear-gradient(135deg,#f6b7c8,#b9e4c9);
   cursor:pointer;
   transition:.3s;
-  color:#000;
-  font-weight:600;
+  color:#111;
+  font-weight:700;
 }
 
 button:hover{
@@ -88,12 +74,13 @@ button:hover{
 }
 
 .card{
-  background:#fff;
+  background:white;
   border-radius:22px;
-  border:1px solid #ddd;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
   overflow:hidden;
   transition:.3s;
+
+  border:1px solid #e8dfe8; 
 }
 
 .card:hover{
@@ -105,6 +92,63 @@ button:hover{
   height:180px;
   object-fit:cover;
 }
+
+.title{
+  font-size:18px;
+  font-weight:800;
+  padding:10px;
+  color:#111;
+}
+
+.desc{
+  padding:0 10px;
+  font-size:14px;
+  color:#222;
+  line-height:1.4;
+}
+
+.price-box{
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.old{
+  text-decoration:line-through;
+  color:#777;
+  font-weight:600;
+}
+
+.new{
+  font-weight:900;
+  color:#000;
+  font-size:18px;
+}
+
+.save{
+  color:#0a7a3d;
+  font-weight:800;
+}
+
+.badge{
+  display:inline-block;
+  margin:6px 10px;
+  padding:5px 12px;
+  font-size:12px;
+  border-radius:999px; 
+  font-weight:700;
+  background:#f1f1f1;
+  color:#222;
+  border:1px solid #ddd;
+}
+
+.badge.pink{
+  background:#ffd6e7;
+  color:#7a2a4d;
+  border:1px solid #f3a6c6;
+}
+
 
 .images{
   display:flex;
@@ -122,67 +166,6 @@ button:hover{
   border-radius:10px;
 }
 
-.title{
-  font-size:18px;
-  font-weight:700;
-  padding:12px;
-  color:#000;
-}
-
-.desc{
-  padding:0 12px;
-  font-size:14px;
-  color:#000;
-  line-height:1.5;
-}
-
-.price-box{
-  padding:12px;
-  display:flex;
-  flex-direction:column;
-  gap:5px;
-  border-top:1px solid #eee;
-  margin-top:10px;
-}
-
-/* стара ціна — трохи сіріша */
-.old{
-  text-decoration:line-through;
-  color:#444;
-  font-weight:500;
-}
-
-/* нова ціна — акцент */
-.new{
-  font-weight:800;
-  color:#d1005a;
-  font-size:18px;
-}
-
-/* знижка — зелена акцентна */
-.save{
-  color:#0a8f4a;
-  font-weight:700;
-}
-
-/* бейджі мінімальні */
-.badge{
-  display:inline-block;
-  margin:8px 12px 0;
-  padding:5px 10px;
-  background:#ffe3ee;
-  color:#6b2a45;
-  font-size:12px;
-  border-radius:999px;
-  font-weight:600;
-}
-
-.icon{
-  font-size:40px;
-  text-align:center;
-  padding-top:10px;
-}
-
 @media(max-width:900px){
   .grid{
     grid-template-columns:repeat(2,1fr);
@@ -192,13 +175,5 @@ button:hover{
 @media(max-width:600px){
   .grid{
     grid-template-columns:1fr;
-  }
-
-  body{
-    padding:15px;
-  }
-
-  h1{
-    font-size:32px;
   }
 }
