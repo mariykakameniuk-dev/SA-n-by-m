@@ -141,18 +141,42 @@ button:hover{
 
 
 .price-box{padding:10px;display:flex;flex-direction:column;gap:4px;}
-.old{text-decoration:line-through;color:#999;}
-.new{font-weight:bold;color:#e6005c;}
-.save{color:#00a650;font-weight:600;}
+.old{
+  text-decoration:line-through;
+  color:#666;
+  font-weight:500;
+}
+
+.new{
+  font-weight:700;
+  color:#d6336c;
+  font-size:18px;
+}
+
+.save{
+  color:#1c8b57;
+  font-weight:700;
+}
+
+.desc{
+  padding:0 10px;
+  font-size:14px;
+  color:#333;
+  line-height:1.5;
+}
 
 .badge{
   display:inline-block;
   margin:6px 10px;
-  padding:4px 10px;
-  background:#ff4d88;
-  color:#fff;
+  padding:5px 10px;
+  background:#f5c2d3;
+  color:#7a2848;
   font-size:12px;
   border-radius:12px;
+  font-weight:600;
 }
 
-.badge.pink{background:#ff7aa8;}
+.badge.pink{
+  background:#f5c2d3;
+  color:#7a2848;
+}
