@@ -78,7 +78,7 @@ const items = [
   price:1899,
   icon:"💕🧴",
   img:"images/care-for-her.jpg"
-}
+},
 ];
 
 function show(data){
