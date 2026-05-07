@@ -106,7 +106,7 @@ function show(data){
 ${item.mothersDay ? `<div class="badge pink">🌷 День матері</div>` : ""}
 
         <div class="price-box">
-          <div class="old">Стара: ${item.oldPrice} грн</div>
+          <div class="old">Стара ціна: ${item.oldPrice} грн</div>
           <div class="new">Ціна: ${item.price} грн</div>
           <div class="save">Знижка: -${discount} грн</div>
         </div>
