@@ -165,16 +165,10 @@ button:hover{
   font-weight:700;
 }
 
-/* бейджі мінімальні */
-.badge{
-  display:inline-block;
-  margin:8px 12px 0;
-  padding:5px 10px;
-  background:#f3f3f3;
-  color:#000;
-  font-size:12px;
-  border-radius:999px;
-  font-weight:600;
+.badge.pink{
+  background:#ffe3ee;
+  color:#6b2a45;
+  border:1px solid #f2b6cd;
 }
 
 .icon{
