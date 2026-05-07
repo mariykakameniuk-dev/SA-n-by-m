@@ -39,10 +39,43 @@ h1{
   font-weight:500;
 }
 
-select{
-  color:#111;
-  font-weight:600;
+.top-controls{
+  display:flex;
+  justify-content:center;
+  margin-bottom:25px;
 }
+
+#columnsSelect{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+
+  padding:12px 18px;
+  border-radius:999px;
+
+  border:1px solid #e6dfe6;
+  background:linear-gradient(135deg,#ffffff,#f6f0f6);
+
+  font-weight:700;
+  color:#111;
+  cursor:pointer;
+
+  box-shadow:0 6px 15px rgba(0,0,0,0.06);
+
+  transition:0.2s ease;
+}
+
+#columnsSelect:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.10);
+}
+
+#columnsSelect:focus{
+  outline:none;
+  border:1px solid #d8b4d8;
+}
+
+
 
 .buttons{
   display:flex;
