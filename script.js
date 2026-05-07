@@ -102,7 +102,7 @@ function show(data){
         <div class="title">${item.name}</div>
         <div class="desc">${item.desc}</div>
 
-        ${item.holiday === "spring" ? `<div class="badge">🌸 Весняний набір</div>` : ""}
+        
         ${item.mothersDay ? `<div class="badge pink">🌷 День матері</div>` : ""}
 
         <div class="price-box">
