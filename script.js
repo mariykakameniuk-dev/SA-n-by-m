@@ -55,9 +55,30 @@ const items = [
   icon:"🍭💋",
   img:"images/sugar-porn.jpg"
 },
-{name:"SUGAR PORN ДОГЛЯДОВИЙ", tags:"spring парфум крем догляд", holiday:"spring", mothersDay:true, desc:"гель, крем, мило", oldPrice: 2796, price: 2199, icon:"🍭💋", img:"images/sugar-porn-care.jpg" },
-{name:"Набір ТУРБОТА ПРО НЕЇ", tags:"spring крем догляд парфум", holiday:"spring", mothersDay:true, desc:"крем, гель, мило", oldPrice: 2406, price: 1899, icon:"💕🧴", img:"images/care-for-her.jpg"},
 
+{
+  name:"SUGAR PORN ДОГЛЯДОВИЙ",
+  tags:"spring парфум крем догляд",
+  holiday:"spring",
+  mothersDay:true,
+  desc:"гель, крем, мило",
+  oldPrice:2796,
+  price:2199,
+  icon:"🍭💋",
+  img:"images/sugar-porn-care.jpg"
+},
+
+{
+  name:"Набір ТУРБОТА ПРО НЕЇ",
+  tags:"spring крем догляд парфум",
+  holiday:"spring",
+  mothersDay:true,
+  desc:"крем, гель, мило",
+  oldPrice:2406,
+  price:1899,
+  icon:"💕🧴",
+  img:"images/care-for-her.jpg"
+}
 ];
 
 function show(data){
