@@ -87,7 +87,10 @@ function show(data){
 
 function filterTag(tag){
   if(tag === "all") return show(items);
-  if(tag === "весняні") return show(items.filter(i => i.holiday === "spring"));
+
+  if(tag === "весняні")
+    return show(items.filter(i => i.holiday === "spring"));
+
   show(items.filter(i => i.tags.includes(tag)));
 }
 
