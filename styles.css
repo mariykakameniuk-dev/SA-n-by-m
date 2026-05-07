@@ -37,12 +37,25 @@ h1{
   margin-bottom:20px;
   background:#fffdfb;
   color:#5d5668;
+  outline:none;
+}
+
+.search::placeholder{
+  color:#9d93a5;
 }
 
 .top-controls{
   display:flex;
   justify-content:center;
   margin-bottom:20px;
+}
+
+#columnsSelect{
+  padding:12px 16px;
+  border:none;
+  border-radius:14px;
+  background:#fffdfb;
+  color:#5d5668;
 }
 
 .buttons{
@@ -114,13 +127,13 @@ button:hover{
   font-size:18px;
   font-weight:700;
   padding:12px 12px 6px;
-  color:#5f5568;
+  color:#4e435c;
 }
 
 .desc{
   padding:0 12px;
   font-size:14px;
-  color:#746d7d;
+  color:#5f5768;
   line-height:1.6;
 }
 
@@ -135,18 +148,18 @@ button:hover{
 
 .old{
   text-decoration:line-through;
-  color:#9f96a4;
+  color:#7e7485;
   font-weight:500;
 }
 
 .new{
   font-weight:700;
-  color:#7a627c;
+  color:#5d3f67;
   font-size:18px;
 }
 
 .save{
-  color:#8f7b66;
+  color:#6d5a47;
   font-weight:600;
 }
 
@@ -154,16 +167,22 @@ button:hover{
   display:inline-block;
   margin:8px 12px 0;
   padding:5px 10px;
-  background:#efe7f8;
-  color:#776587;
+  background:#e9def5;
+  color:#5e4b70;
   font-size:12px;
   border-radius:999px;
   font-weight:600;
 }
 
 .badge.pink{
-  background:#efe7f8;
-  color:#776587;
+  background:#e9def5;
+  color:#5e4b70;
+}
+
+.icon{
+  font-size:40px;
+  text-align:center;
+  padding-top:10px;
 }
 
 @media(max-width:900px){
@@ -175,5 +194,13 @@ button:hover{
 @media(max-width:600px){
   .grid{
     grid-template-columns:1fr;
+  }
+
+  body{
+    padding:15px;
+  }
+
+  h1{
+    font-size:32px;
   }
 }
