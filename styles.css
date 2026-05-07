@@ -138,3 +138,21 @@ button:hover{
   object-fit:cover;
   border-radius:10px;
 }
+
+
+.price-box{padding:10px;display:flex;flex-direction:column;gap:4px;}
+.old{text-decoration:line-through;color:#999;}
+.new{font-weight:bold;color:#e6005c;}
+.save{color:#00a650;font-weight:600;}
+
+.badge{
+  display:inline-block;
+  margin:6px 10px;
+  padding:4px 10px;
+  background:#ff4d88;
+  color:#fff;
+  font-size:12px;
+  border-radius:12px;
+}
+
+.badge.pink{background:#ff7aa8;}
