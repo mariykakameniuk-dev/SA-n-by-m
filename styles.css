@@ -400,41 +400,30 @@ body.dark h1{
   position: fixed;
   top: -20px;
 
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 
   background: radial-gradient(
     circle at 30% 30%,
-    #ffe6ee 0%,
-    #ffc1d6 45%,
-    #ff9fbd 100%
+    #fff5f8 0%,
+    #ffd6e5 45%,
+    #ffb3cc 100%
   );
 
-  border-radius: 70% 0 70% 0;
+  border-radius: 70% 40% 70% 40%;
 
   transform: rotate(45deg);
 
-  opacity: 0.85;
+  opacity: 0.8;
 
   pointer-events: none;
   z-index: 9999;
 
   box-shadow:
-    inset -2px -2px 4px rgba(255,255,255,0.5),
-    0 0 6px rgba(255,182,193,0.4);
+    inset -2px -2px 5px rgba(255,255,255,0.6),
+    0 2px 8px rgba(255,182,193,0.35);
 
   animation: fall linear forwards;
-
-  clip-path: polygon(
-  50% 0%,
-  65% 20%,
-  100% 50%,
-  70% 100%,
-  50% 80%,
-  30% 100%,
-  0% 50%,
-  35% 20%
-);
 }
 
 @keyframes fall{
