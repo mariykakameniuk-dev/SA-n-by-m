@@ -172,3 +172,20 @@ show(items);
 function toggleDarkMode(){
   document.body.classList.toggle("dark");
 }
+
+function createPetal(){
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.animationDuration = (3 + Math.random() * 5) + "s";
+  petal.style.opacity = Math.random();
+
+  document.body.appendChild(petal);
+
+  setTimeout(()=>{
+    petal.remove();
+  }, 8000);
+}
+
+setInterval(createPetal, 400);
