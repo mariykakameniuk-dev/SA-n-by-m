@@ -190,5 +190,4 @@ function createPetal(){
   }, 7000);
 }
 
-// БІЛЬШЕ ПЕЛЮСТОК:
-setInterval(createPetal, 200);
+setInterval(createPetal, 100);
