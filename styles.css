@@ -400,6 +400,8 @@ body.dark h1{
   opacity:0.35;
   pointer-events:none;
   z-index:0;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .sakura-left{left:0;}
