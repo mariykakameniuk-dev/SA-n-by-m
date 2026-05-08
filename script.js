@@ -178,7 +178,7 @@ function createPetal(){
   petal.classList.add("petal");
 
   petal.style.left = Math.random() * 100 + "vw";
-  petal.style.animationDuration = (6 + Math.random() * 5) + "s";
+  petal.style.animationDuration = (5 + Math.random() * 3) + "s";
   petal.style.width = (14 + Math.random() * 10) + "px";
   petal.style.height = petal.style.width;
   petal.style.opacity = (0.4 + Math.random() * 0.6);
