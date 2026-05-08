@@ -182,6 +182,8 @@ function createPetal(){
   petal.style.width = (10 + Math.random() * 10) + "px";
   petal.style.height = petal.style.width;
   petal.style.opacity = (0.4 + Math.random() * 0.6);
+  petal.style.filter =
+  `hue-rotate(${Math.random()*20-10}deg)`;
 
   document.body.appendChild(petal);
 
