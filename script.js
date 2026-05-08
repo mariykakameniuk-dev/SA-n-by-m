@@ -168,3 +168,7 @@ columnsSelect.addEventListener("change",()=>{
 });
 
 show(items);
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark");
+}
