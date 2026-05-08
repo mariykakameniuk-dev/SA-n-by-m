@@ -405,27 +405,25 @@ body.dark h1{
 .sakura-left{left:0;}
 .sakura-right{right:0; transform:scaleX(-1);}
 
-/* ===================== PETALS ===================== */
 .petal{
   position:fixed;
   top:-10px;
   width:14px;
   height:14px;
+
   background:radial-gradient(circle at 30% 30%, #ffd1dc, #ff7aa8);
   border-radius:50% 50% 50% 0;
-  opacity:0.75;
+
+  opacity:0.7;
+  animation:fall linear forwards;
+
   pointer-events:none;
   z-index:9999;
-  animation:fall linear forwards;
 }
 
 @keyframes fall{
-  0%{
-    transform:translateY(-10vh) translateX(0) rotate(0deg);
-    opacity:1;
-  }
-  100%{
-    transform:translateY(110vh) translateX(80px) rotate(360deg);
+  to{
+    transform:translateY(110vh) rotate(360deg);
     opacity:0;
   }
 }
