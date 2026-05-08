@@ -151,7 +151,7 @@ function filterTag(tag){
 
     show(items.filter(i => i.tags.includes(tag)));
 
-  },400);
+  },300);
 }
 
 search.addEventListener("input",()=>{
