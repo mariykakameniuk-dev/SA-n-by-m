@@ -221,22 +221,20 @@ button:hover{
 
 .sticky-bar{
   position:sticky;
-  top:10px;
+  top:6px;
   z-index:1000;
 
-  background:rgba(255,255,255,0.72);
-  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(10px);
 
-  padding:12px 15px;
-  border-radius:18px;
+  padding:10px;
+  border-radius:14px;
 
-  margin-bottom:20px;
+  margin-bottom:15px;
 
   display:flex;
   flex-direction:column;
-  gap:14px;
-
-  box-shadow:0 6px 18px rgba(0,0,0,.06);
+  gap:10px;
 }
 
 .buttons button.active{
