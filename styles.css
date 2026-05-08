@@ -428,16 +428,7 @@ body.dark h1{
   overflow:hidden;
 }
 
-.petals::before{
-  content:"🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸";
-  position:absolute;
-  top:-50px;
-  left:-100px;
-  font-size:22px;
-  opacity:0.6;
 
-  animation:windFall 10s linear infinite;
-}
 
 @keyframes windFall{
   0%{
