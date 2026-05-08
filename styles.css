@@ -362,6 +362,10 @@ body.dark .badge.pink{
   border:1px solid #ff9ec5;
 }
 
+body.dark h1{
+  color:#fff;
+}
+
 @media(max-width:700px){
 
   .buttons{
