@@ -38,12 +38,12 @@ const items = [
 {name:"Тверде мило + Лосьйон250",tags:"мило лосьйон",desc:" тверде мило + лосьйон250",oldPrice: 1348,price: 1170,icon:"🧼💚",images:["images/tverdemylo.jpg","images/losyon250.jpg"]},
 
 /* 🌸 ВЕСНА */
-{name:"Подарунковий набір ДОМАШНІЙ ЗАТИШОК",tags:"spring дім диф свічка",holiday:"spring",desc:" диф ожина + спрей ожина + мило500 інжир + косметичка чорний",oldPrice: 3296,price: 2669,icon:"🏠✨",img:"images/home-cozy.jpg"},
+{name:"Подарунковий набір ДОМАШНІЙ ЗАТИШОК",tags:"spring диф спрей мило",holiday:"spring",desc:" диф ожина + спрей ожина + мило500 інжир + косметичка чорний",oldPrice: 3296,price: 2669,icon:"🏠✨",img:"images/home-cozy.jpg"},
 {name:"Подарунковий набір ДЛЯ СУМОЧКИ",tags:"spring крем парфум",holiday:"spring",desc:" парфум10 La La Lovely + бальзам брелок Glow On, Girl + крем маракуя 30 мл + крум шуга 15 мл ",oldPrice: 1816,price: 1449,icon:"👛💄",img:"images/for-bag.jpg"},
-{name:"Подарунковий набір ДЛЯ ПОДРУЖОК",tags:"spring крем догляд",holiday:"spring",desc:"бальзам брелок Glow On, Girl + бальзам брелок Халва + крем Sugar Porn 15 мл + крем Маракуя 15 мл ",oldPrice: 1516,price: 1199,icon:"💕✨",img:"images/for-girls.jpg"},
-{name:"Подарунковий набір СОЛОДКИЙ",tags:"spring дім свічка диф",holiday:"spring",mothersDay:true,desc:"диф Круасан + свічка Круасан + спрей Груша Фрезія + крем Sugar Porn 30 мл ",oldPrice: 2856,price: 2199,icon:"🍯🕯",img:"images/sweet-set.jpg"},
-{name:"Подарунковий набір УЛЮБЛЕНІ КРЕМИ",tags:"spring крем догляд",holiday:"spring",mothersDay:true,desc:"5 кремів",oldPrice: 1795,price: 1399,icon:"🧴💕",img:"images/favorite-creams.jpg"},
-{name:"Подарунковий набір ВИШНЯ",tags:"spring крем гель лосьйон",holiday:"spring",mothersDay:true,desc:"пінка Вишня + батер Вишня + скраб Вишня + крем Вишня + диф Вишня ",oldPrice: 3495,price: 2799,icon:"🍒✨",img:"images/cherry-set.jpg"},
+{name:"Подарунковий набір ДЛЯ ПОДРУЖОК",tags:"spring крем бальзам",holiday:"spring",desc:"бальзам брелок Glow On, Girl + бальзам брелок Халва + крем Sugar Porn 15 мл + крем Маракуя 15 мл ",oldPrice: 1516,price: 1199,icon:"💕✨",img:"images/for-girls.jpg"},
+{name:"Подарунковий набір СОЛОДКИЙ",tags:"spring свічка диф крем",holiday:"spring",mothersDay:true,desc:"диф Круасан + свічка Круасан + спрей Груша Фрезія + крем Sugar Porn 30 мл ",oldPrice: 2856,price: 2199,icon:"🍯🕯",img:"images/sweet-set.jpg"},
+{name:"Подарунковий набір УЛЮБЛЕНІ КРЕМИ",tags:"spring крем ",holiday:"spring",mothersDay:true,desc:"5 кремів",oldPrice: 1795,price: 1399,icon:"🧴💕",img:"images/favorite-creams.jpg"},
+{name:"Подарунковий набір ВИШНЯ",tags:"spring крем диф гель лосьйон",holiday:"spring",mothersDay:true,desc:"пінка Вишня + батер Вишня + скраб Вишня + крем Вишня + диф Вишня ",oldPrice: 3495,price: 2799,icon:"🍒✨",img:"images/cherry-set.jpg"},
 {
   name:"SUGAR PORN",
   tags:"spring парфум крем",
@@ -70,7 +70,7 @@ const items = [
 
 {
   name:"Набір ТУРБОТА ПРО НЕЇ",
-  tags:"spring крем догляд парфум",
+  tags:"spring крем мило лосьйон гель",
   holiday:"spring",
   mothersDay:true,
   desc:"гель Маркакуя + крем Маракуя + лосьйон Маракуя + мило Маракуя",
