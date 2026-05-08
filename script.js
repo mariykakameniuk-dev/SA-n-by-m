@@ -63,7 +63,7 @@ const items = [
   tags:"spring парфум крем",
   holiday:"spring",
   mothersDay:false,
-  desc:"пінка Sugar Porn + мило Sugar Porn + крем Sugar Porn + міст Sugar Porn",
+  desc:"парфум, крем, мило",
   oldPrice:2456,
   price:1999,
   icon:"🍭💋",
@@ -75,13 +75,13 @@ const items = [
   tags:"spring парфум крем догляд",
   holiday:"spring",
   mothersDay:true,
-  desc:"пінка Sugar Porn + скраб Sugar Porn + крем Sugar Porn + міст Sugar Porn",
+  desc:"гель, крем, мило",
   oldPrice:2796,
   price:2199,
   icon:"🍭💋",
   img:"images/sugar-porn-care.jpg"
 },
-
+  
 {
   name:"Набір ТУРБОТА ПРО НЕЇ",
   tags:"spring крем мило лосьйон гель",
