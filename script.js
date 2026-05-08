@@ -2,6 +2,20 @@ const products = document.getElementById("products");
 const search = document.getElementById("search");
 const columnsSelect = document.getElementById("columnsSelect");
 
+const filterButtons = document.querySelectorAll(".buttons button");
+
+function setActiveButton(tag){
+  filterButtons.forEach(btn=>btn.classList.remove("active"));
+
+  const activeBtn = [...filterButtons].find(btn =>
+    btn.getAttribute("onclick")?.includes(`'${tag}'`)
+  );
+
+  if(activeBtn){
+    activeBtn.classList.add("active");
+  }
+}
+
 const items = [
 
 /* КРЕМ */
@@ -117,12 +131,27 @@ ${item.mothersDay ? `<div class="badge pink">🌷 День матері</div>` :
 }
 
 function filterTag(tag){
-  if(tag === "all") return show(items);
 
-  if(tag === "весняні")
-    return show(items.filter(i => i.holiday === "spring"));
+  setActiveButton(tag);
 
-  show(items.filter(i => i.tags.includes(tag)));
+  products.innerHTML = `
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  `;
+
+  setTimeout(()=>{
+
+    if(tag === "all") return show(items);
+
+    if(tag === "весняні"){
+      return show(items.filter(i => i.holiday === "spring"));
+    }
+
+    show(items.filter(i => i.tags.includes(tag)));
+
+  },300);
 }
 
 search.addEventListener("input",()=>{
