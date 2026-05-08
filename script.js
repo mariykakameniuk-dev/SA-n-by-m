@@ -177,18 +177,12 @@ function createPetal(){
   const petal = document.createElement("div");
   petal.classList.add("petal");
 
-  petal.style.left = Math.random() * 100 + "vw";
-  petal.style.animationDuration = (3 + Math.random() * 4) + "s";
-
-  // різний вітер для кожної пелюстки
-  petal.style.animationDelay = Math.random() * 2 + "s";
-
-  petal.style.width = petal.style.height =
-    (10 + Math.random() * 10) + "px";
+  petal.style.left = Math.random() * window.innerWidth + "px";
+  petal.style.animationDuration = (4 + Math.random() * 4) + "s";
 
   document.body.appendChild(petal);
 
-  setTimeout(()=>{
+  setTimeout(() => {
     petal.remove();
   }, 8000);
 }
