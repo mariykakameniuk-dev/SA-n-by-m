@@ -178,16 +178,19 @@ function createPetal(){
   petal.classList.add("petal");
 
   petal.style.left = Math.random() * 100 + "vw";
-  petal.style.animationDuration = (2 + Math.random() * 4) + "s";
-  petal.style.width = (10 + Math.random() * 10) + "px";
-  petal.style.height = petal.style.width;
-  petal.style.opacity = (0.4 + Math.random() * 0.6);
+  petal.style.animationDuration = (3 + Math.random() * 4) + "s";
+
+  // різний вітер для кожної пелюстки
+  petal.style.animationDelay = Math.random() * 2 + "s";
+
+  petal.style.width = petal.style.height =
+    (10 + Math.random() * 10) + "px";
 
   document.body.appendChild(petal);
 
   setTimeout(()=>{
     petal.remove();
-  }, 7000);
+  }, 8000);
 }
 
-setInterval(createPetal, 200);
+setInterval(createPetal, 300);
