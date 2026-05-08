@@ -392,21 +392,23 @@ body.dark h1{
 }
 
 
-.sakura-side{
-  position:fixed;
-  top:0;
-  left:0;
-  width:60px;
-  height:100vh;
-  pointer-events:none;
-  z-index:999;
+.sakura {
+  position: fixed;
+  top: -20px;
+  width: 220px;
+  opacity: 0.7;
+  z-index: 999;
+  pointer-events: none;
+}
 
-  background:linear-gradient(
-    to bottom,
-    rgba(255,182,193,0.25),
-    rgba(255,240,245,0.05)
-  );
-  border-right:1px solid rgba(255,182,193,0.3);
+.sakura.left {
+  left: -30px;
+  transform: rotate(-10deg);
+}
+
+.sakura.right {
+  right: -30px;
+  transform: scaleX(-1) rotate(-10deg);
 }
 
 .petal{
@@ -431,3 +433,5 @@ body.dark h1{
     opacity:0;
   }
 }
+
+
