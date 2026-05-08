@@ -430,21 +430,23 @@ body{
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 340px;
+  width:420px;;
   overflow: visible;
   pointer-events: none;
   z-index: 1;
 }
 
 .sakura-left{
-  left: 0;
+  left:-120px;
+  top:-40px;
+  transform: rotate(-8deg);
 }
 
 .sakura-right{
-  right: 0;
-  transform: scaleX(-1);
+  right:-120px;
+  top:-40px;
+  transform: scaleX(-1) rotate(-8deg);
 }
-
 .sakura-left img,
 .sakura-right img{
   width: 100%;
