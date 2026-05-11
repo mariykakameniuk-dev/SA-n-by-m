@@ -197,7 +197,7 @@ function createPetal(){
   petal.style.height = size + "px";
 
   petal.style.animationDuration =
-    (6 + Math.random() * 5) + "s";
+    (9 + Math.random() * 6) + "s";
 
   petal.style.opacity =
     0.7 + Math.random() * 0.3;
@@ -214,4 +214,4 @@ function createPetal(){
 
 setInterval(()=>{
   createPetal();
-},100);
+},400);
