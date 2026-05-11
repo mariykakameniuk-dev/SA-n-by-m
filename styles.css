@@ -446,3 +446,89 @@ body.dark h1{
     opacity:0;
   }
 }
+
+.cat-popup{
+  position: fixed;
+  bottom: -120px;
+  right: 30px;
+  z-index: 99999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 50px;
+
+  pointer-events: none;
+  transition: transform .6s ease, opacity .6s ease;
+}
+
+.cat-popup.show{
+  transform: translateY(-160px);
+  opacity: 1;
+}
+
+.cat-popup.hide{
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.cat-paws{
+  animation: pawsShake .6s infinite alternate;
+}
+
+@keyframes pawsShake{
+  from{ transform: translateY(0); }
+  to{ transform: translateY(-6px); }
+}
+
+.cat-face{
+  opacity: 0;
+  transform: scale(0.6);
+  transition: .3s ease;
+}
+
+.cat-popup.show .cat-face{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.cat-card{
+  position: fixed;
+  left: -80px;
+  bottom: 120px;
+  font-size: 60px;
+  z-index: 9999;
+  pointer-events: none;
+
+  transition: transform .6s ease;
+}
+
+.cat-card.show{
+  transform: translateX(120px);
+}
+
+.cat-card.hide{
+  transform: translateX(0);
+}
+
+#cat-cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  z-index: 99999;
+  pointer-events: none;
+  transition: transform .08s linear;
+}
+
+@keyframes catTap{
+  0%{ transform: scale(1); }
+  50%{ transform: scale(1.4) rotate(-10deg); }
+  100%{ transform: scale(1); }
+}
+
+.cat-tap{
+  animation: catTap .4s ease;
+}
