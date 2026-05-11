@@ -128,6 +128,8 @@ ${item.mothersDay ? `<div class="badge pink">🌷 День матері</div>` :
       </div>
     `;
   });
+
+  addCatTapEffect();
 }
 
 function filterTag(tag){
@@ -217,6 +219,33 @@ setInterval(()=>{
 },700);
 
 
+const cat = document.getElementById("cat-popup");
+
+function showCat(){
+  cat.classList.remove("hidden");
+  cat.classList.add("show");
+
+  setTimeout(() => {
+    cat.classList.remove("show");
+    cat.classList.add("hide");
+  }, 2000);
+
+  setTimeout(() => {
+    cat.classList.remove("hide");
+    cat.classList.add("hidden");
+  }, 2800);
+}
+
+function randomCat(){
+  const delay = 8000 + Math.random() * 12000; // 8–20 сек
+  setTimeout(() => {
+    showCat();
+    randomCat();
+  }, delay);
+}
+
+randomCat();
+
 const catCard = document.getElementById("cat-card");
 
 function catFromCards(){
@@ -244,3 +273,33 @@ document.addEventListener("mousemove",(e)=>{
   catCursor.style.transform =
     `translate(${e.clientX + 10}px, ${e.clientY + 10}px)`;
 });
+
+
+function addCatTapEffect(){
+
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card=>{
+    card.addEventListener("mouseenter",()=>{
+
+      const cat = document.createElement("div");
+      cat.textContent = "🐾";
+      cat.style.position = "absolute";
+      cat.style.top = "10px";
+      cat.style.right = "10px";
+      cat.style.fontSize = "24px";
+
+      cat.classList.add("cat-tap");
+
+      card.style.position = "relative";
+      card.appendChild(cat);
+
+      setTimeout(()=>{
+        cat.remove();
+      },400);
+    });
+  });
+}
+
+addCatTapEffect();
+
