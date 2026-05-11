@@ -397,21 +397,20 @@ body.dark h1{
 
 
 .petal{
-  position:fixed;
-  top:-10px;
-  width:14px;
-  height:14px;
+  position: fixed;
+  top: -40px;
 
-  background:radial-gradient(circle at 30% 30%, #ffd1dc, #ff7aa8);
-  border-radius:50% 50% 50% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  opacity:0.7;
-  animation:fall linear forwards;
+  pointer-events: none;
+  z-index: 9999;
 
-  pointer-events:none;
-  z-index:9999;
+  animation: fall linear forwards;
+
+  will-change: transform;
 }
-
 
 @keyframes fall{
   0%{
