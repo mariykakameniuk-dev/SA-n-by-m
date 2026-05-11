@@ -212,4 +212,6 @@ function createPetal(){
   },12000);
 }
 
-
+setInterval(()=>{
+  createPetal();
+},100);
