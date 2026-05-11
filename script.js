@@ -174,22 +174,40 @@ function toggleDarkMode(){
 }
 
 function createPetal(){
+
   const petal = document.createElement("div");
   petal.classList.add("petal");
 
+  const petals = [
+    "images/petal1.png",
+    "images/petal2.png",
+    "images/petal3.png"
+  ];
+
+  const randomPetal =
+    petals[Math.floor(Math.random()*petals.length)];
+
+  petal.style.backgroundImage = `url(${randomPetal})`;
+
   petal.style.left = Math.random() * 100 + "vw";
-  petal.style.animationDuration = (7 + Math.random() * 6) + "s"; 
-  petal.style.width = (14 + Math.random() * 10) + "px";
-  petal.style.height = petal.style.width;
-  petal.style.opacity = (0.4 + Math.random() * 0.6);
-  petal.style.filter =
-  `hue-rotate(${Math.random()*20-10}deg)`;
+
+  const size = 18 + Math.random() * 18;
+
+  petal.style.width = size + "px";
+  petal.style.height = size + "px";
+
+  petal.style.animationDuration =
+    (6 + Math.random() * 5) + "s";
+
+  petal.style.opacity =
+    0.7 + Math.random() * 0.3;
+
+  petal.style.transform =
+    `rotate(${Math.random()*360}deg)`;
 
   document.body.appendChild(petal);
 
   setTimeout(()=>{
     petal.remove();
-  }, 7000);
+  },12000);
 }
-
-setInterval(createPetal, 300);
