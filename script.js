@@ -213,4 +213,3 @@ function createPetal(){
 }
 
 
-petal.style.border = "1px solid red";
