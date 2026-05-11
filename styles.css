@@ -413,24 +413,36 @@ body.dark h1{
 }
 
 @keyframes fall{
+
   0%{
-    transform:translate(0,0) rotate(0deg);
+    transform:
+      translate3d(0,0,0)
+      rotate(0deg);
   }
 
   25%{
-    transform:translate(20px,25vh) rotate(90deg);
+    transform:
+      translate3d(25px,25vh,0)
+      rotate(90deg);
   }
 
   50%{
-    transform:translate(-20px,50vh) rotate(180deg);
+    transform:
+      translate3d(-20px,50vh,0)
+      rotate(180deg);
   }
 
   75%{
-    transform:translate(15px,75vh) rotate(270deg);
+    transform:
+      translate3d(20px,75vh,0)
+      rotate(270deg);
   }
 
   100%{
-    transform:translate(-10px,110vh) rotate(360deg);
+    transform:
+      translate3d(-15px,110vh,0)
+      rotate(360deg);
+
     opacity:0;
   }
 }
