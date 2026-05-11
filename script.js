@@ -215,3 +215,32 @@ function createPetal(){
 setInterval(()=>{
   createPetal();
 },700);
+
+
+const catCard = document.getElementById("cat-card");
+
+function catFromCards(){
+  catCard.classList.add("show");
+
+  setTimeout(()=>{
+    catCard.classList.remove("show");
+    catCard.classList.add("hide");
+  }, 2000);
+
+  setTimeout(()=>{
+    catCard.classList.remove("hide");
+  }, 2600);
+}
+
+setInterval(()=>{
+  if(Math.random() < 0.4){
+    catFromCards();
+  }
+}, 7000);
+
+const catCursor = document.getElementById("cat-cursor");
+
+document.addEventListener("mousemove",(e)=>{
+  catCursor.style.transform =
+    `translate(${e.clientX + 10}px, ${e.clientY + 10}px)`;
+});
