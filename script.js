@@ -214,4 +214,4 @@ function createPetal(){
 
 setInterval(()=>{
   createPetal();
-},400);
+},700);
