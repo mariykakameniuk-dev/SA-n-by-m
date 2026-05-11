@@ -211,3 +211,6 @@ function createPetal(){
     petal.remove();
   },12000);
 }
+
+
+petal.style.border = "1px solid red";
