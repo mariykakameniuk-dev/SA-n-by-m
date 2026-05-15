@@ -22,7 +22,7 @@ const items = [
 {name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 958,price: 858,icon:"🧴💋",img:"images/krem-max.jpg"},
 {name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
 {name:"Парфум10 + Крем",tags:"крем парфум",desc:" парфум 10 мл + крем",oldPrice: 1058,price: 908,icon:"🌸🧴",img:"images/parfum-krem.jpg"},
-{name:"Гідрейтер + Крем",tags:"крем гідрейтер догляд",desc:" гідрейтер + крем",oldPrice: 958,price: 798,icon:"💧🧴",img:"images/hydrater-krem.jpg"},
+{name:"Гідрейтер + Крем",tags:"крем гідрейтер догляд",desc:" гідрейтер + крем",oldPrice: 918,price: 818,icon:"💧🧴",img:"images/hydrater-krem.jpg"},
 {name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:" лосьйон250 + крем",oldPrice: 1158,price: 1008,icon:"🧴💚",images:["images/krem.jpg","images/losyon250.jpg"]},
 {name:"Тверде мило + Крем",tags:"мило крем",desc:" тверде мило + крем",oldPrice: 948,price: 820,icon:"🧼🧴",img:"images/soap-krem.jpg"},
 {name:"Міст + Крем",tags:"крем",desc:" міст + крем",oldPrice: 1348,price: 1150,icon:"✨🧴",img:"images/mist-krem.jpg"},
