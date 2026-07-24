@@ -18,6 +18,20 @@ function setActiveButton(tag){
 
 const items = [
 
+/* МІСТ */
+{name:"Тріо містів 50мл",tags:"міст",desc:" 3 місти50",oldPrice: 1497,price: 1093,icon:"🧴🧴🧴",img:"images/3-mist50.jpg"},
+{name:"Тревел комбо містів",tags:"міст",desc:" 2 місти",oldPrice: 998,price: 798,icon:"🧴🧴🧴",img:"images/travel-combo-mist.jpg"},
+{name:"КОМБО міст150 + Лосьйон250",tags:"міст лосьйон",desc:" Міст150 + Лосьйон250",oldPrice: 1598,price: 1438,icon:"🧴🧴🧴",img:"images/combo-mist150.jpg"},
+{name:"КОМБО містів",tags:"міст",desc:" Міст150 + міст50",oldPrice: 1298,price: 1103,icon:"🧴🧴🧴",img:"images/combo-50-150.jpg"},
+{name:"ТРІО Гель250 + Лосьйон250 + Міст150",tags:"міст гель лосьйон",desc:" Міст150 + Гель250 + Лосьйон250",oldPrice: 2347,price: 1878,icon:"🧴🧴🧴",img:"images/trio-mist-los-gel.jpg"},
+{name:"СHERRY ME НАБІР СПА-ДОГЛЯДУ",tags:"міст гель баттер",desc:" Міст150 + ГельЧері250 + Баттер",oldPrice: 2247,price: 1798,icon:"🧴🧴🧴",img:"images/cherry-trio.jpg"},
+{name:"PUR PUR НАБІР ДЛЯ ПОДОРОЖЕЙ",tags:"міст гель лосьйон",desc:" Міст50 + Гель100 + Лосьйон100",oldPrice: 1447,price: 1302,icon:"🧴🧴🧴",img:"images/purpur-travel.jpg"},
+{name:"ТРІО Гель250 + Лосьйон250 + Міст50",tags:"міст гель лосьйон",desc:" Міст50 + Гель250 + Лосьйон250",oldPrice: 2047,price: 1638,icon:"🧴🧴🧴",img:"images/trio-mist50.jpg"},
+{name:"КОМБО Міст50 + Лосьйон250",tags:"міст лосьйон",desc:" Міст50 + Лосьйон250",oldPrice: 1298,price: 1168,icon:"🧴🧴🧴",img:"images/combo-mist50.jpg"},
+{name:"КОМБО ВЕЛИКИХ містів",tags:"міст",desc:" Міст150 + міст150",oldPrice: 1598,price: 1406,icon:"🧴🧴🧴",img:"images/bigmist-combo.jpg"},
+
+
+  
 /* КРЕМ */
 {name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 958,price: 858,icon:"🧴💋",img:"images/krem-max.jpg"},
 {name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
