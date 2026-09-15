@@ -27,10 +27,9 @@ const items = [
 
   
 /* КРЕМ */
-{name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 958,price: 858,icon:"🧴💋",img:"images/krem-max.jpg"},
+{name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
 {name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
 {name:"Парфум10 + Крем",tags:"крем парфум",desc:" парфум 10 мл + крем",oldPrice: 1058,price: 908,icon:"🌸🧴",img:"images/parfum-krem.jpg"},
-{name:"Гідрейтер + Крем",tags:"крем гідрейтер догляд",desc:" гідрейтер + крем",oldPrice: 918,price: 818,icon:"💧🧴",img:"images/hydrater-krem.jpg"},
 {name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:" лосьйон250 + крем",oldPrice: 1158,price: 1008,icon:"🧴💚",images:["images/krem.jpg","images/losyon250.jpg"]},
 {name:"Тверде мило + Крем",tags:"мило крем",desc:" тверде мило + крем",oldPrice: 948,price: 820,icon:"🧼🧴",img:"images/soap-krem.jpg"},
 {name:"Міст + Крем",tags:"крем",desc:" міст + крем",oldPrice: 1348,price: 1150,icon:"✨🧴",img:"images/mist-krem.jpg"},
@@ -43,12 +42,10 @@ const items = [
 
 /* ДІМ */
 {name:"2 Дифузора",tags:"диф",desc:" 2 дифузора",oldPrice: 1898,price: 1698,icon:"🏠🏠",img:"images/2-dif.jpg"},
-{name:"Рефіл + Дифузор",tags:"диф",desc:" рефіл + дифузор",oldPrice: 1948,price: 1748,icon:"♻️🏠",img:"images/refill-dif.jpg"},
 {name:"Свічка + Дифузор",tags:"диф",desc:" свічка + дифузор",oldPrice: 1848,price: 1640,icon:"🕯️🏠",images:["images/svichka.jpg","images/dif.jpg"]},
 {name:"Аромат в авто + Дифузор",tags:"диф",desc:" аромат в авто + дифузор",oldPrice: 1748,price: 1540,icon:"🚗🏠",img:"images/car-dif.jpg"},
 {name:"Мило500 + Дифузор",tags:"мило диф",desc:" мило + дифузор",oldPrice: 1648,price: 1498,icon:"🧼🏠",img:"images/soap-dif.jpg"},
 {name:"8 Дифузорів",tags:"диф",desc:" 8 дифузорів",oldPrice: 8541,price: 6643,icon:"🏠✨",img:"images/8-dif.jpg"},
-{name:"Рефіл + 2 Дифузора",tags:"диф",desc:" рефіл + 2 дифузора",oldPrice: 2897,price: 2552,icon:"♻️🏠🏠",img:"images/refill-2dif.jpg"},
 
 /* ТІЛО */
 {name:"Лосьйон250 + Гель250 + Крем",tags:"лосьйон250 + гель250 + крем",desc:" лосьйон + гель + крем",oldPrice: 1907,price: 1707,icon:"💚🧴",img:"images/body-set1.jpg"},
@@ -61,6 +58,8 @@ const items = [
 
 /* 🌸 ВЕСНА */
 {name:"Подарунковий набір ДОМАШНІЙ ЗАТИШОК",tags:"spring диф спрей мило",holiday:"spring",desc:" диф ожина + спрей ожина + мило500 інжир + косметичка чорний",oldPrice: 3296,price: 2669,icon:"🏠✨",img:"images/home-cozy.jpg"},
+{name:"Подарунковий набір Улюблені креми",tags:"крем",holiday:"spring",desc:"крем Кава + крем Вишня + крем Маракуя",oldPrice: 1077,price: 869,icon:"✨",img:"images/lovely.jpg"},
+{name:"Подарунковий набір ДЛЯ СУМОЧКИ 2.0",tags:"крем бальзам",holiday:"spring",desc:" крем Шуга порн + крем Маракуя + бальзам Лола",oldPrice: 1277,price: 1019,icon:"🏠✨",img:"images/for-bag2.jpg"},
 {name:"Подарунковий набір ДЛЯ СУМОЧКИ",tags:"spring крем парфум",holiday:"spring",desc:" парфум10 La La Lovely + бальзам брелок Glow On, Girl + крем маракуя 30 мл + крум шуга 15 мл ",oldPrice: 1816,price: 1449,icon:"👛💄",img:"images/for-bag.jpg"},
 {name:"Подарунковий набір ДЛЯ ПОДРУЖОК",tags:"spring крем бальзам",holiday:"spring",desc:"бальзам брелок Glow On, Girl + бальзам брелок Халва + крем Sugar Porn 15 мл + крем Маракуя 15 мл ",oldPrice: 1516,price: 1199,icon:"💕✨",img:"images/for-girls.jpg"},
 {name:"Подарунковий набір СОЛОДКИЙ",tags:"spring свічка диф крем",holiday:"spring",mothersDay:true,desc:"диф Круасан + свічка Круасан + спрей Груша Фрезія + крем Sugar Porn 30 мл ",oldPrice: 2856,price: 2199,icon:"🍯🕯",img:"images/sweet-set.jpg"},
