@@ -23,7 +23,7 @@ const items = [
 {name:"КОМБО міст150 + Лосьйон250",tags:"міст лосьйон",desc:" Міст150 + Лосьйон250",oldPrice: 1598,price: 1439,icon:"🧴🧴🧴",img:"images/combo-mist150.jpg"},
 {name:"ТРІО Гель250 + Лосьйон250 + Міст150",tags:"міст гель лосьйон",desc:" Міст150 + Гель250 + Лосьйон250",oldPrice: 2347,price: 1879,icon:"🧴🧴🧴",img:"images/trio-mist-los-gel.jpg"},
 {name:"КОМБО Міст50 + Лосьйон250",tags:"міст лосьйон",desc:" Міст50 + Лосьйон250",oldPrice: 1298,price: 1169,icon:"🧴🧴🧴",img:"images/combo-mist50.jpg"},
-
+{name:"Тріо містів 50мл",tags:"міст",desc:" 3 місти50",oldPrice: 1497,price: 1093,icon:"🧴🧴🧴",img:"images/3-mist50.jpg"},
 
   
 /* КРЕМ */
