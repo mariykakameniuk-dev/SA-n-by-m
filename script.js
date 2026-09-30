@@ -58,7 +58,7 @@ const items = [
 
 /* 🌸 ВЕСНА */
 {name:"Подарунковий набір ДОМАШНІЙ ЗАТИШОК",tags:"spring диф спрей мило",holiday:"spring",desc:" диф ожина + спрей ожина + мило500 інжир + косметичка чорний",oldPrice: 3296,price: 2669,icon:"🏠✨",img:"images/home-cozy.jpg"},
-{name:"Подарунковий набір Улюблені креми",tags:"крем",holiday:"spring",desc:"крем Кава + крем Вишня + крем Маракуя",oldPrice: 1077,price: 869,icon:"✨",img:"images/lovely.jpg"},
+{name:"Подарунковий набір Улюблені креми 3шт",tags:"крем",holiday:"spring",desc:"крем Фісташка + крем Шуга порн + крем Маракуя",oldPrice: 1077,price: 869,icon:"✨",img:"images/lovely.jpg"},
 {name:"Подарунковий набір ДЛЯ СУМОЧКИ 2.0",tags:"крем бальзам",holiday:"spring",desc:" крем Шуга порн + крем Маракуя + бальзам Лола",oldPrice: 1277,price: 1019,icon:"🏠✨",img:"images/for-bag2.jpg"},
 {name:"Подарунковий набір ДЛЯ СУМОЧКИ",tags:"spring крем парфум",holiday:"spring",desc:" парфум10 La La Lovely + бальзам брелок Glow On, Girl + крем маракуя 30 мл + крум шуга 15 мл ",oldPrice: 1816,price: 1449,icon:"👛💄",img:"images/for-bag.jpg"},
 {name:"Подарунковий набір ДЛЯ ПОДРУЖОК",tags:"spring крем бальзам",holiday:"spring",desc:"бальзам брелок Glow On, Girl + бальзам брелок Халва + крем Sugar Porn 15 мл + крем Маракуя 15 мл ",oldPrice: 1516,price: 1199,icon:"💕✨",img:"images/for-girls.jpg"},
