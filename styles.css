@@ -1,666 +1,705 @@
 
 
-:root {
-  --bg: #faf5ed;
-  --bg-soft: #f3e8d9;
-  --card: #fffdf9;
-  --text: #514137;
-  --muted: #8b7768;
-  --accent: #b87545;
-  --accent-dark: #8f5735;
-  --accent-light: #ead1b8;
-  --border: #eadccd;
-  --shadow: 0 5px 18px rgba(100, 66, 39, 0.09);
-  --radius: 20px;
-  --transition: 0.25s ease;
-}
+/* ========================================
+   🍂 SISTERS AROMA — AUTUMN EDITION
+   Карамель • Кориця • Теракота
+======================================== */
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+:root {
+  --autumn-bg: #f4e8d5;
+  --autumn-cream: #fffaf2;
+  --autumn-caramel: #c47a45;
+  --autumn-terracotta: #a84e32;
+  --autumn-brown: #75452f;
+  --autumn-olive: #41452e;
+  --autumn-text: #38271e;
+  --autumn-muted: #786558;
+  --autumn-border: #e5cbb0;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Nunito", "Segoe UI", sans-serif;
-  color: var(--text);
   background:
-    radial-gradient(
-      circle at 10% 5%,
-      rgba(235, 204, 171, 0.25),
-      transparent 30%
-    ),
-    var(--bg);
-  transition:
-    background var(--transition),
-    color var(--transition);
-  overflow-x: hidden;
+    radial-gradient(ellipse at top left,
+      rgba(196,122,69,.16), transparent 40%),
+    linear-gradient(135deg, #f8eee0, #f0dfc8 55%, #ead8bd);
+
+  padding: 20px;
+  color: var(--autumn-text);
+  min-height: 100vh;
+  transition: background .4s ease, color .4s ease;
 }
 
-button,
-input,
-select {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
+.container {
+  max-width: 1300px;
+  margin: auto;
 }
 
 /* ---------- ЗАГОЛОВОК ---------- */
 
-h1,
-h2,
-h3 {
-  color: var(--text);
-}
-
 h1 {
-  margin: 28px 16px 8px;
   text-align: center;
-  font-size: clamp(27px, 4vw, 42px);
-  font-weight: 800;
-  letter-spacing: -0.8px;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: var(--autumn-brown);
+  letter-spacing: -.8px;
 }
 
-h1::after {
-  content: " 🍂";
+.sub {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #80634c;
+  line-height: 1.5;
 }
 
-.subtitle,
-header p {
-  margin: 0 auto 25px;
-  padding: 0 16px;
-  text-align: center;
-  color: var(--muted);
+/* ---------- ПОШУК ---------- */
+
+.search {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid var(--autumn-border);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  color: var(--autumn-text);
+  background: rgba(255,250,242,.95);
+  font-weight: 500;
   font-size: 15px;
-  line-height: 1.6;
-}
-
-/* ---------- ПОШУК І ВИБІР КІЛЬКОСТІ КОЛОНОК ---------- */
-
-#search,
-#columnsSelect {
-  display: block;
-  width: min(92%, 520px);
-  min-height: 46px;
-  margin: 12px auto;
-  padding: 12px 16px;
-  color: var(--text);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 15px;
   outline: none;
-  box-shadow: 0 3px 10px rgba(100, 66, 39, 0.04);
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition),
-    background var(--transition);
+  box-shadow: 0 5px 18px rgba(91,55,30,.05);
+  transition: .25s ease;
 }
 
-#search:focus,
+.search:focus {
+  border-color: var(--autumn-caramel);
+  box-shadow: 0 0 0 4px rgba(196,122,69,.13);
+}
+
+.search::placeholder {
+  color: #a58c76;
+}
+
+/* ---------- КІЛЬКІСТЬ КОЛОНОК ---------- */
+
+.top-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#columnsSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 12px 38px 12px 18px;
+  border-radius: 999px;
+  border: 1px solid #dfc2a3;
+
+  background:
+    linear-gradient(45deg, transparent 50%, #8b5635 50%) calc(100% - 19px) 50% / 6px 6px no-repeat,
+    linear-gradient(135deg, #fffaf2, #f1dfc8);
+
+  font-weight: 700;
+  color: var(--autumn-brown);
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(91,55,30,.08);
+  transition: .2s ease;
+}
+
+#columnsSelect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 20px rgba(91,55,30,.13);
+}
+
 #columnsSelect:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(184, 117, 69, 0.13);
+  outline: 2px solid rgba(196,122,69,.35);
+  outline-offset: 2px;
 }
 
-#search::placeholder {
-  color: #ad9a8a;
+/* ---------- КНОПКИ КАТЕГОРІЙ ---------- */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 18px;
+  border: 1px solid rgba(117,69,47,.14);
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #f2d7b7, #e5b889);
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease,
+              background .25s ease;
+
+  color: #573621;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(91,55,30,.07);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(91,55,30,.14);
+}
+
+.buttons button.active {
+  background: linear-gradient(135deg, #a84e32, #75452f);
+  color: #fff8ed;
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(117,69,47,.24);
 }
 
 /* ---------- ПАНЕЛЬ ФІЛЬТРІВ ---------- */
 
-.filters,
-.filter-buttons,
-.buttons,
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  padding: 12px 14px;
-}
-
-.filters button,
-.filter-buttons button,
-.buttons button,
-nav button,
-button.filter-btn {
-  min-height: 38px;
-  padding: 9px 16px;
-  color: var(--accent-dark);
-  background: #f1e2d1;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  transition:
-    color var(--transition),
-    background var(--transition),
-    transform var(--transition),
-    box-shadow var(--transition);
-}
-
-.filters button:hover,
-.filter-buttons button:hover,
-.buttons button:hover,
-nav button:hover,
-button.filter-btn:hover {
-  background: #e8ceb3;
-  transform: translateY(-2px);
-}
-
-.filters button.active,
-.filter-buttons button.active,
-.buttons button.active,
-nav button.active,
-button.filter-btn.active {
-  color: #fffaf4;
-  background: var(--accent);
-  box-shadow: 0 4px 10px rgba(143, 87, 53, 0.18);
-}
-
-/* ---------- КНОПКА ТЕМНОЇ ТЕМИ ---------- */
-
-#dark-toggle,
-#darkToggle,
-.dark-toggle,
-button[onclick*="toggleDarkMode"] {
-  padding: 10px 15px;
-  color: var(--text);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  transition: var(--transition);
-}
-
-#dark-toggle:hover,
-#darkToggle:hover,
-.dark-toggle:hover,
-button[onclick*="toggleDarkMode"]:hover {
-  background: var(--bg-soft);
-  transform: translateY(-1px);
-}
-
-/* ---------- ЗАКРІПЛЕНА ПАНЕЛЬ ---------- */
-
 .sticky-bar {
   position: sticky;
-  top: 0;
-  z-index: 50;
-  padding: 8px 0;
-  background: rgba(250, 245, 237, 0.92);
-  border-bottom: 1px solid rgba(234, 220, 205, 0.8);
-  backdrop-filter: blur(12px);
+  top: 6px;
+  z-index: 1000;
+
+  background: rgba(255,250,242,.84);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  padding: 12px;
+  border: 1px solid rgba(196,122,69,.17);
+  border-radius: 18px;
+  margin-bottom: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  box-shadow: 0 8px 24px rgba(91,55,30,.07);
 }
 
 /* ---------- СІТКА ТОВАРІВ ---------- */
 
-#products {
+.grid {
   display: grid;
-  grid-template-columns: repeat(
-    var(--columns, 4),
-    minmax(0, 1fr)
-  );
-  gap: 18px;
-  width: min(1500px, 96%);
-  margin: 20px auto 45px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
   align-items: stretch;
 }
 
-/* ---------- КАРТКА НАБОРУ ---------- */
+/* ---------- КАРТКИ ---------- */
 
-.product-card,
-.product,
-.card,
-#products > div {
+.card {
   min-width: 0;
-  color: var(--text);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--autumn-cream);
+  border-radius: 22px;
+  border: 1px solid #e8d4bd;
+  box-shadow: 0 9px 24px rgba(91,55,30,.09);
   overflow: hidden;
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition),
-    background var(--transition),
-    border-color var(--transition);
+  transition: transform .3s ease, box-shadow .3s ease,
+              border-color .3s ease;
+  animation: fadeUp .4s ease;
 }
 
-.product-card:hover,
-.product:hover,
-.card:hover,
-#products > div:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(100, 66, 39, 0.14);
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #d4a77d;
+  box-shadow: 0 16px 32px rgba(91,55,30,.15);
 }
 
-/* ---------- ФОТО НАБОРІВ ---------- */
+/* ---------- ФОТО ---------- */
 
-.product-card img,
-.product img,
-.card img,
-#products > div img {
+.photo {
   display: block;
-  max-width: 100%;
-}
-
-.photo,
-.product-photo {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #f2e8dc;
-}
-
-.photo img,
-.product-photo img {
-  width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: contain;
-  object-position: center;
+  background: #fffaf3;
+  padding: 10px;
+  transition: transform .4s ease;
 }
 
 .images {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3px;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  height: 180px;
   overflow: hidden;
-  background: #f2e8dc;
+  background: #fffaf3;
 }
 
 .images img {
-  width: 100%;
-  height: 100%;
+  flex: 1 1 0;
   min-width: 0;
-  min-height: 0;
+  height: 100%;
   object-fit: contain;
-  object-position: center;
+  border-radius: 10px;
+  background: #fff;
+  padding: 5px;
+  transition: transform .35s ease;
 }
 
-/* Якщо картка містить одне фото без .photo */
-#products > div > img:first-child {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  background: #f2e8dc;
+.card:hover .photo,
+.card:hover .images img {
+  transform: scale(1.035);
 }
 
-/* ---------- ТЕКСТ КАРТКИ ---------- */
+/* ---------- НАЗВА ТА ОПИС ---------- */
 
-.product-card h2,
-.product h2,
-.card h2,
-#products > div h2 {
-  margin: 13px 12px 7px;
-  font-size: clamp(14px, 1.5vw, 19px);
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px;
+  color: #593723;
   line-height: 1.35;
-  overflow-wrap: anywhere;
 }
 
-.product-card p,
-.product p,
-.card p,
-#products > div p {
-  margin: 0 12px 12px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
-  overflow-wrap: anywhere;
+.desc {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #766253;
+  line-height: 1.5;
 }
 
 /* ---------- ЦІНИ ---------- */
 
-.price-box,
-.prices {
+.price-box {
+  padding: 12px 10px 15px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 7px;
-  margin: 10px 12px 15px;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.old-price,
-.oldPrice,
-del {
-  color: #a59689;
-  font-size: 13px;
+.old {
   text-decoration: line-through;
+  color: #a18b79;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.new-price,
-.newPrice,
-.price {
-  color: var(--accent-dark);
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.saving,
-.discount {
-  padding: 4px 8px;
-  color: #6d713d;
-  background: #edf0d9;
-  border-radius: 8px;
-  font-size: 11px;
-  font-weight: 800;
-}
-
-/* ---------- ПОЗНАЧКИ НАБОРОВ ---------- */
-
-.badge,
-.mothers-day,
-.spring-badge {
-  display: inline-block;
-  max-width: calc(100% - 24px);
-  margin: 8px 12px 0;
-  padding: 5px 9px;
-  color: #805339;
-  background: #f5e4d2;
-  border-radius: 8px;
-  font-size: 11px;
-  font-weight: 800;
-  overflow-wrap: anywhere;
-}
-
-/* ---------- ЛОКАЛЬНИЙ ЛІЧИЛЬНИК «+» ---------- */
-
-.counter,
-.plus-counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 12px 14px;
-}
-
-.counter button,
-.plus-counter button {
-  width: 34px;
-  height: 34px;
-  color: white;
-  background: var(--accent);
-  border: 0;
-  border-radius: 50%;
+.new {
+  font-weight: 900;
+  color: var(--autumn-terracotta);
   font-size: 20px;
+}
+
+.save {
+  color: #61703e;
   font-weight: 800;
-  transition: var(--transition);
+  font-size: 13px;
 }
 
-.counter button:hover,
-.plus-counter button:hover {
-  background: var(--accent-dark);
-  transform: scale(1.06);
+/* ---------- БЕЙДЖІ ---------- */
+
+.badge {
+  display: inline-block;
+  margin: 6px 10px;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: #eee1ce;
+  color: #70482e;
+  border: 1px solid #ddc4a4;
 }
 
-/* ---------- ОСІННЄ ЛИСТЯ ---------- */
-
-.petal {
-  position: fixed;
-  top: -60px;
-  z-index: 100;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: none;
-  animation-name: autumnFall;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  will-change: transform;
+.badge.pink {
+  background: #f3d8c6;
+  color: #963f2f;
+  border: 1px solid #e5b49b;
 }
 
-@keyframes autumnFall {
-  0% {
-    transform: translate3d(0, -5vh, 0) rotate(0deg);
-  }
+/* ---------- АНІМАЦІЯ КАРТОК ---------- */
 
-  25% {
-    transform: translate3d(25px, 25vh, 0) rotate(100deg);
-  }
-
-  50% {
-    transform: translate3d(-20px, 50vh, 0) rotate(210deg);
-  }
-
-  75% {
-    transform: translate3d(20px, 75vh, 0) rotate(300deg);
-  }
-
-  100% {
-    transform: translate3d(-10px, 110vh, 0) rotate(420deg);
-  }
-}
-
-/* ---------- КОТИК ---------- */
-
-.autumn-cat,
-.cat-popup,
-.cat-card,
-#cat-cursor {
-  z-index: 60;
-}
-
-/* Не змінюємо геометрію наявних елементів котика.
-   Їхнє окреме оформлення можна додати нижче. */
-
-/* ---------- АНІМАЦІЇ ПОЧАТКОВОГО ЗАВАНТАЖЕННЯ ---------- */
-
-.skeleton {
-  min-height: 220px;
-  background: linear-gradient(
-    90deg,
-    #f0e5d8 25%,
-    #faf3eb 50%,
-    #f0e5d8 75%
-  );
-  background-size: 200% 100%;
-  border-radius: var(--radius);
-  animation: skeletonShimmer 1.4s ease infinite;
-}
-
-@keyframes skeletonShimmer {
+@keyframes fadeUp {
   from {
-    background-position: 200% 0;
+    opacity: 0;
+    transform: translateY(15px);
   }
 
   to {
-    background-position: -200% 0;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* ---------- ТЕМНА ТЕМА ---------- */
+/* ---------- ЗАВАНТАЖЕННЯ ---------- */
 
-body.dark {
-  --bg: #211d1a;
-  --bg-soft: #302721;
-  --card: #302923;
-  --text: #f2e5d8;
-  --muted: #c0ac9a;
-  --accent: #c48b5e;
-  --accent-dark: #e0b18a;
-  --accent-light: #5a4030;
-  --border: #4a3a2e;
-  --shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
-
-  background:
-    radial-gradient(
-      circle at 10% 5%,
-      rgba(133, 87, 53, 0.13),
-      transparent 30%
-    ),
-    var(--bg);
-  color: var(--text);
+.skeleton {
+  height: 340px;
+  border-radius: 22px;
+  background: linear-gradient(
+    90deg,
+    #eadac6 25%,
+    #f6eadb 37%,
+    #eadac6 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
 }
 
-body.dark h1,
-body.dark h2,
-body.dark h3 {
-  color: var(--text);
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* ========================================
+   🌙 ТЕМНА ОСІННЯ ТЕМА
+======================================== */
+
+body.dark {
+  background:
+    radial-gradient(ellipse at top left,
+      rgba(155,91,49,.16), transparent 42%),
+    linear-gradient(135deg, #211d19, #30251e 55%, #25271d);
+
+  color: #f5e9d9;
+}
+
+body.dark h1 {
+  color: #e9b17d;
+}
+
+body.dark .sub {
+  color: #c6ad96;
+}
+
+body.dark .card {
+  background: #302820;
+  border: 1px solid #514032;
+  box-shadow: 0 10px 25px rgba(0,0,0,.24);
+}
+
+body.dark .card:hover {
+  border-color: #a8734d;
+  box-shadow: 0 15px 30px rgba(0,0,0,.34);
+}
+
+body.dark .title {
+  color: #f6e6d3;
+}
+
+body.dark .desc {
+  color: #d0bdab;
+}
+
+body.dark .old {
+  color: #a89583;
+}
+
+body.dark .new {
+  color: #f0b17e;
+}
+
+body.dark .save {
+  color: #c2cf8a;
+}
+
+body.dark .search,
+body.dark #columnsSelect {
+  background-color: #302820;
+  color: #f6e6d3;
+  border-color: #594635;
+}
+
+body.dark .search::placeholder {
+  color: #b29b85;
 }
 
 body.dark .sticky-bar {
-  background: rgba(33, 29, 26, 0.92);
-  border-bottom-color: var(--border);
+  background: rgba(39,31,25,.88);
+  border-color: rgba(196,122,69,.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
-body.dark #search,
-body.dark #columnsSelect,
-body.dark .product-card,
-body.dark .product,
-body.dark .card,
-body.dark #products > div,
-body.dark #dark-toggle,
-body.dark #darkToggle,
-body.dark .dark-toggle,
-body.dark button[onclick*="toggleDarkMode"] {
-  color: var(--text);
-  background-color: var(--card);
-  border-color: var(--border);
+body.dark button {
+  background: linear-gradient(135deg, #61432e, #75452f);
+  color: #fff1df;
+  border-color: #78533a;
 }
 
-body.dark .filters button,
-body.dark .filter-buttons button,
-body.dark .buttons button,
-body.dark nav button,
-body.dark button.filter-btn {
-  color: #f2e5d8;
+body.dark .buttons button.active {
+  background: linear-gradient(135deg, #e3ae7c, #c47a45);
+  color: #2e1d13;
+  border-color: transparent;
+}
+
+body.dark .badge {
   background: #49372a;
+  color: #f1d7b9;
+  border-color: #6b503a;
 }
 
-body.dark .filters button.active,
-body.dark .filter-buttons button.active,
-body.dark .buttons button.active,
-body.dark nav button.active,
-body.dark button.filter-btn.active {
-  color: #211d1a;
-  background: var(--accent);
+body.dark .badge.pink {
+  background: #58352d;
+  color: #ffd7c1;
+  border-color: #8c5140;
 }
 
 body.dark .photo,
-body.dark .product-photo,
-body.dark .images,
-body.dark #products > div > img:first-child {
-  background: #28221d;
+body.dark .images {
+  background: #fdf8f0;
 }
 
-body.dark .badge,
-body.dark .mothers-day,
-body.dark .spring-badge {
-  color: #f4d8bd;
-  background: #59402e;
+body.dark .images img {
+  background: #fff;
 }
 
-body.dark .saving,
-body.dark .discount {
-  color: #e6e9c7;
-  background: #41432d;
+body.dark .skeleton {
+  background: linear-gradient(
+    90deg,
+    #332820 25%,
+    #47372b 37%,
+    #332820 63%
+  );
+  background-size: 400% 100%;
 }
 
-/* ---------- АДАПТИВНІСТЬ ---------- */
+/* ========================================
+   📱 АДАПТИВНІСТЬ
+======================================== */
 
 @media (max-width: 1100px) {
-  #products {
-    grid-template-columns: repeat(
-      min(var(--columns, 3), 3),
-      minmax(0, 1fr)
-    );
-    gap: 14px;
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
   }
 }
 
-@media (max-width: 760px) {
-  #products {
-    grid-template-columns: repeat(
-      min(var(--columns, 2), 2),
-      minmax(0, 1fr)
-    );
-    width: 94%;
-    gap: 12px;
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   h1 {
-    margin-top: 22px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 12px;
   }
 
-  .filters,
-  .filter-buttons,
-  .buttons,
-  nav {
-    gap: 7px;
+  .buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 2px 10px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttons button {
+    flex: 0 0 auto;
+  }
+
+  .sticky-bar {
+    top: 4px;
     padding: 9px;
   }
 
-  .filters button,
-  .filter-buttons button,
-  .buttons button,
-  nav button,
-  button.filter-btn {
-    padding: 8px 12px;
+  h1 {
+    font-size: 29px;
+  }
+
+  .grid {
+    gap: 12px;
+  }
+
+  .photo {
+    height: 170px;
+    padding: 7px;
+  }
+
+  .images {
+    height: 145px;
+    padding: 7px;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .desc {
     font-size: 13px;
+    padding: 0 8px;
   }
 
-  .product-card h2,
-  .product h2,
-  .card h2,
-  #products > div h2 {
-    margin: 10px 9px 6px;
-    font-size: 13px;
+  .price-box {
+    padding: 8px;
   }
 
-  .product-card p,
-  .product p,
-  .card p,
-  #products > div p {
-    margin: 0 9px 10px;
-    font-size: 12px;
-  }
-
-  .price-box,
-  .prices {
-    margin: 8px 9px 12px;
-  }
-
-  .new-price,
-  .newPrice,
-  .price {
-    font-size: 16px;
+  .new {
+    font-size: 17px;
   }
 }
 
 @media (max-width: 380px) {
-  #products {
-    gap: 8px;
-    width: 96%;
+  .grid {
+    grid-template-columns: 1fr;
   }
 
-  .product-card,
-  .product,
-  .card,
-  #products > div {
-    border-radius: 14px;
+  .photo {
+    height: 220px;
   }
 
-  .filters button,
-  .filter-buttons button,
-  .buttons button,
-  nav button,
-  button.filter-btn {
-    padding: 7px 10px;
-    font-size: 12px;
+  .images {
+    height: 180px;
   }
+}
+
+/* ========================================
+   🍁 ОСІННЄ ЛИСТЯ
+   Сумісно з наявним класом .petal
+======================================== */
+
+.petal {
+  position: fixed;
+  top: -40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 9999;
+  animation: fall linear forwards;
+  will-change: transform;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate3d(25px, 25vh, 0) rotate(90deg);
+  }
+
+  50% {
+    transform: translate3d(-20px, 50vh, 0) rotate(180deg);
+  }
+
+  75% {
+    transform: translate3d(20px, 75vh, 0) rotate(270deg);
+  }
+
+  100% {
+    transform: translate3d(-15px, 110vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ---------- КОТИКИ 🐈 ---------- */
+
+.cat-popup {
+  position: fixed;
+  bottom: -120px;
+  right: 30px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  pointer-events: none;
+  transition: transform .6s ease, opacity .6s ease;
+}
+
+.cat-popup.show {
+  transform: translateY(-160px);
+  opacity: 1;
+}
+
+.cat-popup.hide {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.cat-paws {
+  animation: pawsShake .6s infinite alternate;
+}
+
+@keyframes pawsShake {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-6px);
+  }
+}
+
+.cat-face {
+  opacity: 0;
+  transform: scale(.6);
+  transition: .3s ease;
+}
+
+.cat-popup.show .cat-face {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cat-card {
+  position: fixed;
+  left: -80px;
+  bottom: 120px;
+  font-size: 60px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: transform .6s ease;
+}
+
+.cat-card.show {
+  transform: translateX(120px);
+}
+
+.cat-card.hide {
+  transform: translateX(0);
+}
+
+#cat-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  z-index: 99999;
+  pointer-events: none;
+  transition: transform .08s linear;
+}
+
+@keyframes catTap {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4) rotate(-10deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cat-tap {
+  animation: catTap .4s ease;
 }
 
 /* ---------- ЗМЕНШЕННЯ АНІМАЦІЙ ---------- */
@@ -669,10 +708,9 @@ body.dark .discount {
   *,
   *::before,
   *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
+    animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
   }
 }
-```
