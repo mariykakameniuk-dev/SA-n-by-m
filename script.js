@@ -22,7 +22,7 @@ const items = [
   
 /* КРЕМ */
 
-{name:"Крем + Гідрейтер",tags:"крем гідрейтер",desc:" крем + гідрейтер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
+{name:"Крем + Гідрейтер",tags:"крем гідрейтер",desc:" крем + гідрейтер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/hydrater-krem.jpg"},
 {name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
 {name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
 {name:"Парфум10 + Крем",tags:"крем парфум",desc:" парфум 10 мл + крем",oldPrice: 1058,price: 908,icon:"🌸🧴",img:"images/parfum-krem.jpg"},
