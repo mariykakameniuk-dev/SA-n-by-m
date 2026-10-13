@@ -192,8 +192,8 @@ function createPetal(){
   petal.classList.add("petal");
 
   const petals = [
-    "images/ChatGPT Image 13 окт. 2026 г., 12_32_08.png",
-    "images/ChatGPT Image 13 окт. 2026 г., 12_29_00.png"
+    "images/bereza.png",
+    "images/dub.png"
   ];
 
   const randomPetal =
