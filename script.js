@@ -30,12 +30,6 @@ const items = [
 {name:"Тверде мило + Крем",tags:"мило крем",desc:" тверде мило + крем",oldPrice: 948,price: 820,icon:"🧼🧴",img:"images/soap-krem.jpg"},
 {name:"Міст + Крем",tags:"крем",desc:" міст + крем",oldPrice: 1348,price: 1150,icon:"✨🧴",img:"images/mist-krem.jpg"},
 
-/* МІСТ */
-{name:"КОМБО містів",tags:"міст",desc:" 2 місти",oldPrice: 998,price: 798,icon:"🧴🧴🧴",img:"images/travel-combo-mist.jpg"},
-{name:"КОМБО міст150 + Лосьйон250",tags:"міст лосьйон",desc:" Міст150 + Лосьйон250",oldPrice: 1598,price: 1439,icon:"🧴🧴🧴",img:"images/combo-mist150.jpg"},
-{name:"ТРІО Гель250 + Лосьйон250 + Міст150",tags:"міст гель лосьйон",desc:" Міст150 + Гель250 + Лосьйон250",oldPrice: 2347,price: 1879,icon:"🧴🧴🧴",img:"images/trio-mist-los-gel.jpg"},
-{name:"КОМБО Міст50 + Лосьйон250",tags:"міст лосьйон",desc:" Міст50 + Лосьйон250",oldPrice: 1298,price: 1169,icon:"🧴🧴🧴",img:"images/combo-mist50.jpg"},
-{name:"Тріо містів 50мл",tags:"міст",desc:" 3 місти50",oldPrice: 1497,price: 1093,icon:"🧴🧴🧴",img:"images/3-mist50.jpg"},
 
   
 /* ПАРФУМИ */
@@ -60,6 +54,14 @@ const items = [
 {name:"3 Крема + 3 Лосьйони + 3 Гелі",tags:"3 крема + 3 лосьйона + 3 геля",desc:"Великий набір догляду",oldPrice: 5841,price: 4591,icon:"💖🧴",img:"images/mega-set.jpg"},
 {name:"Тверде мило + Лосьйон250",tags:"мило лосьйон",desc:" тверде мило + лосьйон250",oldPrice: 1348,price: 1170,icon:"🧼💚",images:["images/tverdemylo.jpg","images/losyon250.jpg"]},
 
+/* МІСТ */
+{name:"КОМБО містів",tags:"міст",desc:" 2 місти",oldPrice: 998,price: 798,icon:"🧴🧴🧴",img:"images/travel-combo-mist.jpg"},
+{name:"КОМБО міст150 + Лосьйон250",tags:"міст лосьйон",desc:" Міст150 + Лосьйон250",oldPrice: 1598,price: 1439,icon:"🧴🧴🧴",img:"images/combo-mist150.jpg"},
+{name:"ТРІО Гель250 + Лосьйон250 + Міст150",tags:"міст гель лосьйон",desc:" Міст150 + Гель250 + Лосьйон250",oldPrice: 2347,price: 1879,icon:"🧴🧴🧴",img:"images/trio-mist-los-gel.jpg"},
+{name:"КОМБО Міст50 + Лосьйон250",tags:"міст лосьйон",desc:" Міст50 + Лосьйон250",oldPrice: 1298,price: 1169,icon:"🧴🧴🧴",img:"images/combo-mist50.jpg"},
+{name:"Тріо містів 50мл",tags:"міст",desc:" 3 місти50",oldPrice: 1497,price: 1093,icon:"🧴🧴🧴",img:"images/3-mist50.jpg"},
+
+  
 /* 🌸 ВЕСНА */
 {name:"Подарунковий набір ДОМАШНІЙ ЗАТИШОК",tags:"spring диф спрей мило",holiday:"spring",desc:" диф ожина + спрей ожина + мило500 інжир + косметичка чорний",oldPrice: 3296,price: 2669,icon:"🏠✨",img:"images/home-cozy.jpg"},
 {name:"Подарунковий набір Улюблені креми 3шт",tags:"крем",holiday:"spring",desc:"крем Фісташка + крем Шуга порн + крем Маракуя",oldPrice: 1077,price: 869,icon:"✨",img:"images/lovely.jpg"},
