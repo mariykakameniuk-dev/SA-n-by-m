@@ -18,6 +18,18 @@ function setActiveButton(tag){
 
 const items = [
 
+
+  
+/* КРЕМ */
+
+{name:"Крем + Гідрейтер",tags:"крем гідрейтер",desc:" крем + гідрейтер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
+{name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
+{name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
+{name:"Парфум10 + Крем",tags:"крем парфум",desc:" парфум 10 мл + крем",oldPrice: 1058,price: 908,icon:"🌸🧴",img:"images/parfum-krem.jpg"},
+{name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:" лосьйон250 + крем",oldPrice: 1158,price: 1008,icon:"🧴💚",images:["images/krem.jpg","images/losyon250.jpg"]},
+{name:"Тверде мило + Крем",tags:"мило крем",desc:" тверде мило + крем",oldPrice: 948,price: 820,icon:"🧼🧴",img:"images/soap-krem.jpg"},
+{name:"Міст + Крем",tags:"крем",desc:" міст + крем",oldPrice: 1348,price: 1150,icon:"✨🧴",img:"images/mist-krem.jpg"},
+
 /* МІСТ */
 {name:"КОМБО містів",tags:"міст",desc:" 2 місти",oldPrice: 998,price: 798,icon:"🧴🧴🧴",img:"images/travel-combo-mist.jpg"},
 {name:"КОМБО міст150 + Лосьйон250",tags:"міст лосьйон",desc:" Міст150 + Лосьйон250",oldPrice: 1598,price: 1439,icon:"🧴🧴🧴",img:"images/combo-mist150.jpg"},
@@ -26,14 +38,6 @@ const items = [
 {name:"Тріо містів 50мл",tags:"міст",desc:" 3 місти50",oldPrice: 1497,price: 1093,icon:"🧴🧴🧴",img:"images/3-mist50.jpg"},
 
   
-/* КРЕМ */
-{name:"Крем + Максимайзер",tags:"крем",desc:" крем + максимайзер",oldPrice: 918,price: 818,icon:"🧴💋",img:"images/krem-max.jpg"},
-{name:"3 Крема",tags:"крем",desc:" 3 крема",oldPrice: 1077,price: 977,icon:"🧴🧴🧴",img:"images/3-krema.jpg"},
-{name:"Парфум10 + Крем",tags:"крем парфум",desc:" парфум 10 мл + крем",oldPrice: 1058,price: 908,icon:"🌸🧴",img:"images/parfum-krem.jpg"},
-{name:"Лосьйон250 + Крем",tags:"лосьйон крем",desc:" лосьйон250 + крем",oldPrice: 1158,price: 1008,icon:"🧴💚",images:["images/krem.jpg","images/losyon250.jpg"]},
-{name:"Тверде мило + Крем",tags:"мило крем",desc:" тверде мило + крем",oldPrice: 948,price: 820,icon:"🧼🧴",img:"images/soap-krem.jpg"},
-{name:"Міст + Крем",tags:"крем",desc:" міст + крем",oldPrice: 1348,price: 1150,icon:"✨🧴",img:"images/mist-krem.jpg"},
-
 /* ПАРФУМИ */
 {name:"Парфум10 + Максимайзер",tags:"парфум",desc:" парфум10 + максимайзер",oldPrice: 1258,price: 1108,icon:"🌸💋",images:["images/maximazer.jpg","images/parfum10.jpg"]},
 {name:"Парфум10 + Парфум50",tags:"парфум",desc:" парфум 10 мл + парфум 50 мл",oldPrice: 2898,price: 2648,icon:"🌸💫",images:["images/parfum10.jpg","images/parfum50.jpg"]},
