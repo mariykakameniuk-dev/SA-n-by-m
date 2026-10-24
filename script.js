@@ -41,7 +41,6 @@ const items = [
 /* ДІМ */
 {name:"2 Дифузора",tags:"диф",desc:" 2 дифузора",oldPrice: 1898,price: 1698,icon:"🏠🏠",img:"images/2-dif.jpg"},
 {name:"Свічка + Дифузор",tags:"диф",desc:" свічка + дифузор",oldPrice: 1848,price: 1640,icon:"🕯️🏠",images:["images/svichka.jpg","images/dif.jpg"]},
-{name:"Аромат в авто + Дифузор",tags:"диф",desc:" аромат в авто + дифузор",oldPrice: 1748,price: 1540,icon:"🚗🏠",img:"images/car-dif.jpg"},
 {name:"Мило500 + Дифузор",tags:"мило диф",desc:" мило + дифузор",oldPrice: 1648,price: 1498,icon:"🧼🏠",img:"images/soap-dif.jpg"},
 {name:"8 Дифузорів",tags:"диф",desc:" 8 дифузорів",oldPrice: 8541,price: 6643,icon:"🏠✨",img:"images/8-dif.jpg"},
 
