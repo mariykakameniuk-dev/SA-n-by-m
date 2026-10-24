@@ -71,29 +71,7 @@ const items = [
 {name:"Подарунковий набір СОЛОДКИЙ",tags:"spring свічка диф крем",holiday:"spring",mothersDay:true,desc:"диф Круасан + свічка Круасан + спрей Груша Фрезія + крем Sugar Porn 30 мл ",oldPrice: 2856,price: 2199,icon:"🍯🕯",img:"images/sweet-set.jpg"},
 {name:"Подарунковий набір УЛЮБЛЕНІ КРЕМИ",tags:"spring крем ",holiday:"spring",mothersDay:true,desc:"5 кремів",oldPrice: 1795,price: 1399,icon:"🧴💕",img:"images/favorite-creams.jpg"},
 {name:"Подарунковий набір ВИШНЯ",tags:"spring крем диф гель лосьйон",holiday:"spring",mothersDay:true,desc:"пінка Вишня + батер Вишня + скраб Вишня + крем Вишня + диф Вишня ",oldPrice: 3495,price: 2799,icon:"🍒✨",img:"images/cherry-set.jpg"},
-{
-  name:"SUGAR PORN",
-  tags:"spring парфум крем",
-  holiday:"spring",
-  mothersDay:false,
-  desc:"піна + крем + мило + міст",
-  oldPrice:2456,
-  price:1999,
-  icon:"🍭💋",
-  img:"images/sugar-porn.jpg"
-},
 
-{
-  name:"SUGAR PORN ДОГЛЯДОВИЙ",
-  tags:"spring парфум крем догляд",
-  holiday:"spring",
-  mothersDay:true,
-  desc:"скраб + піна + міст + крем",
-  oldPrice:2796,
-  price:2199,
-  icon:"🍭💋",
-  img:"images/sugar-porn-care.jpg"
-},
   
 {
   name:"Набір ТУРБОТА ПРО НЕЇ",
