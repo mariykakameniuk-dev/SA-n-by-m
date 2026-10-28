@@ -47,7 +47,7 @@ const items = [
 /* ТІЛО */
 {name:"Лосьйон250 + Гель250 + Крем",tags:"лосьйон250 + гель250 + крем",desc:" лосьйон + гель + крем",oldPrice: 1907,price: 1707,icon:"💚🧴",img:"images/body-set1.jpg"},
 {name:"Гель100 + Лосьйон100",tags:"лосьйон гель",desc:" гель100 + лосьйон100",oldPrice: 948,price: 748,icon:"💚💧",img:"images/body-set2.jpg"},
-{name:"Лосьйон250 + Гель250",tags:"лосьйон гель",desc:" лосьйон250 + гель250",oldPrice: 1498,price: 1248,icon:"💚✨",img:"images/body-set3.jpg"},
+{name:"Лосьйон250 + Гель250",tags:"лосьйон гель",desc:" лосьйон250 + гель250",oldPrice: 1618,price: 1418,icon:"💚✨",img:"images/body-set3.jpg"},
 {name:"Інтим250 + Гель250",tags:"гель",desc:" інтим250 + гель250",oldPrice: 1498,price: 1248,icon:"💗💧",img:"images/intim-gel.jpg"},
 {name:"Део + Гель250",tags:"гель",desc:" део + гель250",oldPrice: 1448,price: 1270,icon:"🌿💧",img:"images/deo-gel.jpg"},
 {name:"3 Крема + 3 Лосьйони + 3 Гелі",tags:"3 крема + 3 лосьйона + 3 геля",desc:"Великий набір догляду",oldPrice: 5841,price: 4591,icon:"💖🧴",img:"images/mega-set.jpg"},
